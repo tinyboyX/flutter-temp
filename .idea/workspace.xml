@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="11f66012-00dd-4ecb-a560-da1e2534a4f7" name="Default Changelist" comment="create account appbar" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@28630d3dd23f7ece]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/tinyboyX/flutter-temp" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1uIK9kYLzfVbMTEw7rpiY3z2lvz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../covidtracking/covid_19_tracking" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/data/main/model" />
+      <recent name="$PROJECT_DIR$/lib/data/main" />
+      <recent name="$PROJECT_DIR$/lib/presentation/main/bloc" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flutter.development">
+    <configuration name="development" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="buildFlavor" value="development" />
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="production" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="buildFlavor" value="production" />
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="staging" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="buildFlavor" value="staging" />
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flutter.production" />
+      <item itemvalue="Flutter.staging" />
+      <item itemvalue="Flutter.development" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11f66012-00dd-4ecb-a560-da1e2534a4f7" name="Default Changelist" comment="" />
+      <created>1624347514220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624347514220</updated>
+    </task>
+    <task id="LOCAL-00001" summary="create account appbar">
+      <created>1624433918947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624433918947</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create account appbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="create account appbar" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="243" y="210" width="1084" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624352067480">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="243" y="210" width="1084" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.985@0.27.1920.985" timestamp="1624352067480" />
+    <state x="687" y="327" width="525" height="424" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1624352078717">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="687" y="327" width="525" height="424" key="#com.intellij.ide.util.TreeFileChooserDialog/0.27.1920.985@0.27.1920.985" timestamp="1624352078717" />
+    <state x="743" y="277" width="416" height="498" key="FileChooserDialogImpl" timestamp="1624433629588">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="743" y="277" width="416" height="498" key="FileChooserDialogImpl/0.27.1920.985@0.27.1920.985" timestamp="1624433629588" />
+    <state x="572" y="420" width="317" height="205" key="Github.ShareDialog" timestamp="1624433998941">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="572" y="420" width="317" height="205" key="Github.ShareDialog/0.27.1920.985@0.27.1920.985" timestamp="1624433998941" />
+    <state width="1415" height="234" key="GridCell.Tab.0.bottom" timestamp="1624433416847">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1415" height="234" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1624433416847" />
+    <state width="1415" height="234" key="GridCell.Tab.0.center" timestamp="1624433416846">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1415" height="234" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1624433416846" />
+    <state width="1415" height="234" key="GridCell.Tab.0.left" timestamp="1624433416845">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1415" height="234" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1624433416845" />
+    <state width="1415" height="234" key="GridCell.Tab.0.right" timestamp="1624433416846">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1415" height="234" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1624433416846" />
+    <state x="441" y="154" width="1037" height="737" key="SettingsEditor" timestamp="1624349483631">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="441" y="154" width="1037" height="737" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1624349483631" />
+    <state x="502" y="432" width="446" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624433636627">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="502" y="432" width="446" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.985@0.27.1920.985" timestamp="1624433636627" />
+    <state x="410" y="230" width="641" height="578" key="find.popup" timestamp="1624433317062">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="410" y="230" width="641" height="578" key="find.popup/0.27.1920.985@0.27.1920.985" timestamp="1624433317062" />
+    <state x="623" y="242" width="672" height="678" key="search.everywhere.popup" timestamp="1624417863242">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="623" y="242" width="672" height="678" key="search.everywhere.popup/0.27.1920.985@0.27.1920.985" timestamp="1624417863242" />
+  </component>
+</project>

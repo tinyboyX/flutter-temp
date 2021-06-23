@@ -1,0 +1,1 @@
+[{"outputType":{"type":"INSTANT_APP_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":2,"versionName":"1.0.0-staging","enabled":true,"outputFile":"app-staging-debug.apk","fullName":"stagingDebug","baseName":"staging-debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.hoangnh.clean_architechture.staging","split":"","minSdkVersion":"21"}}]
