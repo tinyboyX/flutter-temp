@@ -38,7 +38,8 @@ class AppTextStyle {
 
   static TextStyle get label6 {
     return TextStyle(
-      fontSize: 16.sp,
+      fontSize: 14.sp,
+      fontWeight: FontWeight.bold,
     );
   }
   static TextStyle get label7 {

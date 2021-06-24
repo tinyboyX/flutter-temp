@@ -1,13 +1,15 @@
+import 'package:clean_architechture/presentation/account/route_account.dart';
+import 'package:clean_architechture/presentation/dashboard/route_dashboard.dart';
 import 'package:clean_architechture/presentation/home/home_route.dart';
 import 'package:clean_architechture/presentation/login/login_route.dart';
-import 'package:clean_architechture/presentation/main/route_main.dart';
 import 'package:flutter/material.dart';
 
 enum RouteDefine {
   LoginScreen,
   HomeScreen,
   ListUserScreen,
-  MainScreen,
+  AccountScreen,
+  DashboardScreen,
 }
 
 class AppRouting {
@@ -15,7 +17,8 @@ class AppRouting {
     final routes = <String, WidgetBuilder>{
       RouteDefine.LoginScreen.name: (_) => LoginRoute.route,
       RouteDefine.HomeScreen.name: (_) => HomeRoute.route,
-      RouteDefine.MainScreen.name: (_) => MainRoute.route,
+      RouteDefine.AccountScreen.name: (_) => AccountRoute.route,
+      RouteDefine.DashboardScreen.name: (_) => DashboardRoute.route,
       // RouteDefine.ListUserScreen.name: (_) => ListUserRoute.route,
     };
 
