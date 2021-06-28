@@ -33,6 +33,7 @@ class AppTextStyle {
   static TextStyle get label5 {
     return TextStyle(
       fontSize: 18.sp,
+      fontWeight: FontWeight.bold,
     );
   }
 
@@ -51,7 +52,7 @@ class AppTextStyle {
   static TextStyle get buttonLabel {
     return TextStyle(
       fontSize: 20.sp,
-      color: AppColors.blue,
+      color: AppColors.orange,
     );
   }
 
@@ -62,4 +63,15 @@ class AppTextStyle {
       fontWeight: FontWeight.w700,
     );
   }
+
+  static TextStyle focusBottomBarTextStyle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.bold,
+    color: AppColors.orange,
+  );
+  static TextStyle unFocusBottomBarTextStyle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.normal,
+    color: AppColors.grey,
+  );
 }

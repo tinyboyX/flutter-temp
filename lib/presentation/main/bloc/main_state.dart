@@ -4,3 +4,7 @@ part of 'main_bloc.dart';
 abstract class MainState {}
 
 class MainInitial extends MainState {}
+
+class SelectIndexState extends MainState {}
+
+class ScrollIndexState extends MainState {}

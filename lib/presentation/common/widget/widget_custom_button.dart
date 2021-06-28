@@ -1,4 +1,4 @@
-import 'package:clean_architechture/config/constant.dart';
+import 'package:clean_architechture/config/styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,24 +10,25 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RawMaterialButton(
-      fillColor: Colors.orange,
-      splashColor: Colors.orangeAccent,
-      onPressed: onPressed,
-      shape: const StadiumBorder(),
-      child: Padding(
-        padding: EdgeInsets.all(Constant.defaultPadding),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            const SizedBox(
-              width: 10.0,
+    return Container(
+      height: 100,
+      padding: const EdgeInsets.all(30),
+      child: ElevatedButton(
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(5),
+              side: const BorderSide(color: Colors.orange),
             ),
-            Text(
-              text ?? '',
-              maxLines: 1,
-            ),
-          ],
+          ),
+        ),
+        onPressed: () => onPressed,
+        child: Center(
+          child: Text(
+            text ?? '',
+            style: AppTextStyle.buttonLabel,
+          ),
         ),
       ),
     );

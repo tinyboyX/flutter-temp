@@ -4,12 +4,12 @@ import 'package:clean_architechture/gen/fonts.gen.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme with ChangeNotifier {
-  static bool _isDarkTheme = false;
+  static bool isDarkTheme = false;
 
-  ThemeMode get currentTheme => _isDarkTheme ? ThemeMode.dark : ThemeMode.light;
+  ThemeMode get currentTheme => isDarkTheme ? ThemeMode.dark : ThemeMode.light;
 
   void changeTheme() {
-    _isDarkTheme = !_isDarkTheme;
+    isDarkTheme = !isDarkTheme;
     notifyListeners();
   }
 
@@ -63,5 +63,8 @@ class AppTheme with ChangeNotifier {
       // Using Text Theme with Theme.of(context).textTheme.bodyText2,
       //We using text theme from headline5 because of default color of headline 1-4 not exactly like black or white
     );
+  }
+  bool isLightMode(BuildContext context) {
+    return MediaQuery.of(context).platformBrightness == Brightness.light;
   }
 }
