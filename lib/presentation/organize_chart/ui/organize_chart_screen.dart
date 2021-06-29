@@ -48,7 +48,7 @@ class _OrganizeChartScreenState extends State<OrganizeChartScreen> {
                     children: List<Widget>.generate(_list.length, (index) {
                   return WidgetItem(
                     memberModel: _list[index],
-                    color: index % 2 == 0 ? Colors.grey : Colors.white,
+                    color: index % 2 == 0 ? Colors.grey.shade300 : Colors.white,
                   );
                 }))
               ],
