@@ -5,8 +5,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/painting.dart';
 
 class WidgetListItem extends StatelessWidget {
-  WidgetListItem({Key? key, required this.items}) : super(key: key);
+  WidgetListItem({Key? key, required this.items, this.onTap}) : super(key: key);
   final List<ItemModel> items;
+  final Function? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class WidgetListItem extends StatelessWidget {
             return ItemCommon(
               itemModel: itemModel,
               onTap: (String title) {
-                print('$title');
+                onTap;
               },
             );
           },

@@ -2,10 +2,19 @@ import 'package:clean_architechture/presentation/account/route_account.dart';
 import 'package:clean_architechture/presentation/home/home_route.dart';
 import 'package:clean_architechture/presentation/login/login_route.dart';
 import 'package:clean_architechture/presentation/main/main_route.dart';
+import 'package:clean_architechture/presentation/organize_chart/organize_chart_route.dart';
 import 'package:clean_architechture/presentation/report/report_route.dart';
 import 'package:flutter/material.dart';
 
-enum RouteDefine { LoginScreen, HomeScreen, ListUserScreen, AccountScreen, MainScreen, ReportScreen }
+enum RouteDefine {
+  LoginScreen,
+  HomeScreen,
+  ListUserScreen,
+  AccountScreen,
+  MainScreen,
+  ReportScreen,
+  OrganizeChartScreen,
+}
 
 class AppRouting {
   static MaterialPageRoute generateRoute(RouteSettings settings) {
@@ -15,6 +24,7 @@ class AppRouting {
       RouteDefine.AccountScreen.name: (_) => AccountRoute.route,
       RouteDefine.MainScreen.name: (_) => MainRoute.route,
       RouteDefine.ReportScreen.name: (_) => ReportRoute.route,
+      RouteDefine.OrganizeChartScreen.name: (_) => OrganizeChartRoute.route,
       // RouteDefine.ListUserScreen.name: (_) => ListUserRoute.route,
     };
 

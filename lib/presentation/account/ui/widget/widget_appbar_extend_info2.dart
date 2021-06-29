@@ -52,7 +52,7 @@ class WidgetExtendInfo2 extends StatelessWidget {
             width: 30,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: AppColors.lightOrange,
+              color:  AppColors.lightOrange ,
             ),
             child: Center(
               child: WidgetNotificationIcon(
