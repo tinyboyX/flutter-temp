@@ -19,12 +19,12 @@ void main() async {
   await Firebase.initializeApp();
   // Listen for flavor triggered by iOS / android build
   await const MethodChannel('flavor').invokeMethod<String>('getFlavor').then(
-    (String? flavor) async {
+        (String? flavor) async {
       final appConfig = AppConfig.getInstance(flavorName: flavor);
       print("App Config : ${appConfig!.apiBaseUrl}");
     },
   ).catchError(
-    (error) {
+        (error) {
       AppConfig.getInstance(flavorName: "development");
 
       print("Error when set up enviroment $error");
@@ -39,8 +39,7 @@ void main() async {
 
 class MyApp extends StatefulWidget {
   static FirebaseAnalytics analytics = FirebaseAnalytics();
-  static FirebaseAnalyticsObserver observer =
-      FirebaseAnalyticsObserver(analytics: analytics);
+  static FirebaseAnalyticsObserver observer = FirebaseAnalyticsObserver(analytics: analytics);
 
   @override
   _MyAppState createState() => _MyAppState();

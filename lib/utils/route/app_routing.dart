@@ -1,21 +1,21 @@
-import 'package:clean_architechture/presentation/account/route_account.dart';
 import 'package:clean_architechture/presentation/home/home_route.dart';
 import 'package:clean_architechture/presentation/login/login_route.dart';
 import 'package:clean_architechture/presentation/main/main_route.dart';
-import 'package:clean_architechture/presentation/report/report_route.dart';
 import 'package:flutter/material.dart';
 
-enum RouteDefine { LoginScreen, HomeScreen, ListUserScreen, AccountScreen, MainScreen, ReportScreen }
+enum RouteDefine {
+  LoginScreen,
+  HomeScreen,
+  ListUserScreen,
+  MainScreen,
+}
 
 class AppRouting {
   static MaterialPageRoute generateRoute(RouteSettings settings) {
     final routes = <String, WidgetBuilder>{
       RouteDefine.LoginScreen.name: (_) => LoginRoute.route,
       RouteDefine.HomeScreen.name: (_) => HomeRoute.route,
-      RouteDefine.AccountScreen.name: (_) => AccountRoute.route,
       RouteDefine.MainScreen.name: (_) => MainRoute.route,
-      RouteDefine.ReportScreen.name: (_) => ReportRoute.route,
-      // RouteDefine.ListUserScreen.name: (_) => ListUserRoute.route,
     };
 
     final routeBuilder = routes[settings.name];

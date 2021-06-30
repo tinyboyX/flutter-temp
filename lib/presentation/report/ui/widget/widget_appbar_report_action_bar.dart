@@ -39,7 +39,9 @@ class WidgetAppBarReportAction extends StatelessWidget {
         children: [
           WidgetNotificationIcon(
             iconData: Icons.arrow_back,
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+            },
           ),
           WidgetNotificationIcon(
             notificationCount: 12,

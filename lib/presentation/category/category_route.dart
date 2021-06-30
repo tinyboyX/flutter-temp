@@ -2,5 +2,5 @@ import 'package:clean_architechture/presentation/category/ui/category_screen.dar
 import 'package:flutter/material.dart';
 
 class CategoryRoute {
-  static Widget get route => CategoryScreen();
+  static Widget get route => const CategoryScreen();
 }

@@ -63,6 +63,13 @@ class AppTextStyle {
       fontWeight: FontWeight.w700,
     );
   }
+  static TextStyle get memberID {
+    return TextStyle(
+      fontSize: 15.sp,
+      color: Colors.orange,
+      fontWeight: FontWeight.w700,
+    );
+  }
 
   static TextStyle focusBottomBarTextStyle = TextStyle(
     fontSize: 12,

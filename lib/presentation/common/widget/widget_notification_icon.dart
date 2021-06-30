@@ -6,6 +6,7 @@ class WidgetNotificationIcon extends StatelessWidget {
   final VoidCallback onTap;
   final int? notificationCount;
   final Color? color;
+  final Color? backgroundColor;
   final double? size;
 
   const WidgetNotificationIcon({
@@ -15,6 +16,7 @@ class WidgetNotificationIcon extends StatelessWidget {
     this.notificationCount,
     this.color,
     this.size,
+    this.backgroundColor,
   }) : super(key: key);
 
   @override
@@ -24,6 +26,10 @@ class WidgetNotificationIcon extends StatelessWidget {
         onTap: onTap,
         child: Container(
           width: 30,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: backgroundColor,
+          ),
           child: Icon(
             iconData,
             color: color ?? AppColors.white,

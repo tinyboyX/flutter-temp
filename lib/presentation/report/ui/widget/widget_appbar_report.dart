@@ -13,8 +13,8 @@ class AppBarReportWidget extends StatelessWidget {
       width: double.infinity,
       child: Stack(
         children: [
-          WidgetAppBarReportAction(),
-          WidgetAppbarInfoReportItem(),
+          const WidgetAppBarReportAction(),
+          const WidgetAppbarInfoReportItem(),
           // WidgetAppbarInfoItem(),
         ],
       ),

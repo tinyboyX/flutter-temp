@@ -19,9 +19,6 @@ class ExpansionListItem extends StatelessWidget {
         (itemModel) {
           return ItemCommon(
             itemModel: itemModel,
-            onTap: (String title) {
-              print('$title');
-            },
           );
         },
       ).toList(),

@@ -50,7 +50,7 @@ class _BottomMenuWidgetState extends State<BottomMenuWidget> {
             ],
             color: AppTheme().isLightMode(context) ? AppColors.black : AppColors.white,
           ),
-          height: 50,
+          height: 70,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: bloc.menuItems

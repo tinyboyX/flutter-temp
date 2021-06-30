@@ -26,6 +26,7 @@ class MenuItem extends StatelessWidget {
         onClick();
       },
       child: Container(
+        color: AppColors.white,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -37,11 +38,11 @@ class MenuItem extends StatelessWidget {
                 title,
                 style: isSelected
                     ? AppTextStyle.focusBottomBarTextStyle.copyWith(
-                        color: getColor(context),
-                      )
+                  color: getColor(context),
+                )
                     : AppTextStyle.unFocusBottomBarTextStyle.copyWith(
-                        color: getColor(context),
-                      ),
+                  color: getColor(context),
+                ),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 softWrap: true,

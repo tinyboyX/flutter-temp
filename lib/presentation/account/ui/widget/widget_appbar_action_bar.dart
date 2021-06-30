@@ -1,4 +1,5 @@
 import 'package:clean_architechture/config/colors.dart';
+import 'package:clean_architechture/config/navigation_util.dart';
 import 'package:clean_architechture/config/styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +40,9 @@ class WidgetAppBarAction extends StatelessWidget {
         children: [
           WidgetNotificationIcon(
             iconData: Icons.arrow_back,
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+            },
           ),
           const SizedBox(
             width: 20,
