@@ -4,7 +4,6 @@ import 'package:clean_architechture/data/main/model/item_model.dart';
 import 'package:clean_architechture/presentation/account/bloc/account_bloc.dart';
 import 'package:clean_architechture/presentation/account/ui/widget/widget_list_item.dart';
 import 'package:clean_architechture/presentation/common/widget/widget_custom_button.dart';
-import 'package:clean_architechture/presentation/report/ui/screen_report.dart';
 import 'package:clean_architechture/utils/di/injection.dart';
 import 'package:clean_architechture/utils/route/account_nested_routing.dart';
 import 'package:flutter/cupertino.dart';
@@ -14,7 +13,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'widget/widget_appbar.dart';
 
 class AccountScreen extends StatefulWidget {
-  const AccountScreen({Key? key}) : super(key: key);
+    const AccountScreen({Key? key}) : super(key: key);
 
   @override
   _AccountScreenState createState() => _AccountScreenState();
