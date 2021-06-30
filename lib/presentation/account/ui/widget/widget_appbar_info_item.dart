@@ -34,9 +34,13 @@ class WidgetAppbarInfoItem extends StatelessWidget {
             const SizedBox(
               width: 10,
             ),
-            const CircleAvatar(
+             CircleAvatar(
               radius: 30,
-              backgroundColor: Colors.red,
+              backgroundColor: Colors.black,
+              child: Container(
+                margin: const EdgeInsets.all(10),
+                color: AppColors.white,
+              ),
             ),
             const SizedBox(
               width: 10,

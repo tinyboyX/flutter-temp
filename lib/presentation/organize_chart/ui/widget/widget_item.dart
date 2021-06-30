@@ -76,7 +76,7 @@ class _WidgetItemState extends State<WidgetItem> {
                       });
                     },
                     color: !selected ? Colors.black : Colors.orange,
-                    backgroundColor: Colors.grey.shade300,
+                    backgroundColor: Colors.grey.shade100,
                     size: 25,
                   )
                 ],

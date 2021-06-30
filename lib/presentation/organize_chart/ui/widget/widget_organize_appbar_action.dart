@@ -37,7 +37,9 @@ class OrganizeWidgetAppBarAction extends StatelessWidget {
         children: [
           WidgetNotificationIcon(
             iconData: Icons.arrow_back,
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+            },
           ),
           Container(
             height: 40,
