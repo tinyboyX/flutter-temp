@@ -10,9 +10,11 @@ class WidgetExtendInfo2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(5),
+      height: 30,
+      color: AppColors.white,
       child: Row(
         mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             height: 30,
@@ -26,33 +28,38 @@ class WidgetExtendInfo2 extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            width: 16,
+            width: 10,
           ),
           Text(
             "3,900",
-            style: AppTextStyle.label5,
+            style: AppTextStyle.label6,
           ),
+          const SizedBox(width: 5),
           SizedBox(
-            width: 16,
+            width: 20,
             child: Stack(
+              clipBehavior: Clip.none,
               children: [
                 const Positioned(
-                  top: 0,
+                  top: 8,
                   right: 0,
                   child: Text(
                     'Points',
-                    style: TextStyle(fontSize: 5),
+                    style: TextStyle(fontSize: 7),
                   ),
                 ),
               ],
             ),
+          ),
+          const SizedBox(
+            width: 5,
           ),
           Container(
             height: 30,
             width: 30,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color:  AppColors.lightOrange ,
+              color: AppColors.lightOrange,
             ),
             child: Center(
               child: WidgetNotificationIcon(

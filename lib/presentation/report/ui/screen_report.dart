@@ -9,13 +9,32 @@ import 'widget/widget_appbar_report.dart';
 
 class ReportScreen extends StatelessWidget {
   ReportScreen({Key? key}) : super(key: key);
-  final List<ItemModel> items = [
+  final List<ItemModel> itemsPersonal = [
     ItemModel(icon: Icons.add_task_outlined, title: 'Personal Statistic', isDivide: false),
     ItemModel(icon: Icons.person_add, title: 'Account Information', isDivide: false),
-    ItemModel(icon: Icons.album, title: 'Organization Chart', isDivide: false,onTap: (){
-      Navigator.pushNamed(NavigationUtil.accountKey.currentContext!, AccountNestedRouteDefine.OrganizeChartScreen.name);
-    }),
+    ItemModel(
+        icon: Icons.album,
+        title: 'Organization Chart',
+        isDivide: false,
+        onTap: () {
+          Navigator.pushNamed(NavigationUtil.accountKey.currentContext!, AccountNestedRouteDefine.OrganizeChartScreen.name);
+        }),
     ItemModel(icon: Icons.room_outlined, title: 'Sponsor Chart', isDivide: false),
+    ItemModel(isDivide: true),
+  ];
+
+  final List<ItemModel> itemsDirectSponsor = [
+    ItemModel(icon: Icons.add_task_outlined, title: 'G1 Analysis', isDivide: false),
+    ItemModel(icon: Icons.add_task_outlined, title: 'Direct Sponsor Analysis', isDivide: false),
+    ItemModel(icon: Icons.add_task_outlined, title: 'New Pin of Direct Sponsor Team', isDivide: false),
+    ItemModel(icon: Icons.add_task_outlined, title: 'Matching Pin of Direct Sponsor Team', isDivide: false),
+    ItemModel(icon: Icons.add_task_outlined, title: 'New Register & Update SE EX S. Team', isDivide: false),
+    ItemModel(isDivide: true),
+  ];
+  final List<ItemModel> itemsTravelBonus = [
+    ItemModel(icon: Icons.add_task_outlined, title: 'Trip Progress', isDivide: false),
+    ItemModel(icon: Icons.person_add, title: 'Travel PV History', isDivide: false),
+    ItemModel(isDivide: true),
   ];
 
   @override
@@ -27,15 +46,15 @@ class ReportScreen extends StatelessWidget {
             const AppBarReportWidget(),
             ExpansionListItem(
               title: 'Personal Report',
-              items: items,
+              items: itemsPersonal,
             ),
             ExpansionListItem(
-              title: 'Personal Report',
-              items: items,
+              title: 'Direct Sponsor Report',
+              items: itemsDirectSponsor,
             ),
             ExpansionListItem(
-              title: 'Personal Report',
-              items: items,
+              title: 'Travel Bonus',
+              items: itemsTravelBonus,
             )
           ],
         ),

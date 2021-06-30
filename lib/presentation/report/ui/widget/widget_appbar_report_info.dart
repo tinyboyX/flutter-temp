@@ -84,7 +84,7 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
                       height: 8,
                     ),
                     Text(
-                      'SCM Bussiness (ID:123248214)',
+                      'SCM Business (ID:123248214)',
                       style: AppTextStyle.label7,
                     ),
                     const SizedBox(
@@ -111,33 +111,40 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            padding: const EdgeInsets.symmetric(vertical: 7),
-            margin: const EdgeInsets.symmetric(vertical: 10),
-            height: 60,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: AppColors.white,
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.3),
-                  spreadRadius: 1,
-                  blurRadius: 3,
-                ),
-              ],
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const WidgetExtendInfo(),
-                Expanded(
-                  child: VerticalDivider(
-                    width: 1,
-                    color: AppColors.grey.shade500,
+          Center(
+            child: Container(
+              padding: const EdgeInsets.symmetric(vertical: 7),
+              margin: const EdgeInsets.symmetric(vertical: 10),
+              height: 60,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: AppColors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.3),
+                    spreadRadius: 1,
+                    blurRadius: 3,
                   ),
-                ),
-                const WidgetExtendInfo2(),
-              ],
+                ],
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  const WidgetExtendInfo(),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Center(
+                    child: Expanded(
+                      child: VerticalDivider(
+                        width: 2,
+                        color: AppColors.grey,
+                      ),
+                    ),
+                  ),
+                  const WidgetExtendInfo2(),
+                ],
+              ),
             ),
           )
         ],

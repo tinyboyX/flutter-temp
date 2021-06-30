@@ -8,9 +8,9 @@ class WidgetExtendInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10),
       child: Row(
         mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Container(
             height: 30,
@@ -28,7 +28,7 @@ class WidgetExtendInfo extends StatelessWidget {
           ),
           Text(
             "39,000",
-            style: AppTextStyle.label5,
+            style: AppTextStyle.label6,
           ),
           const SizedBox(
             width: 10,
@@ -44,6 +44,7 @@ class WidgetExtendInfo extends StatelessWidget {
               child: Icon(
                 Icons.backup,
                 color: AppColors.orange,
+                size: 18,
               ),
             ),
           ),

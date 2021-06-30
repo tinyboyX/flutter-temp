@@ -1,6 +1,7 @@
 import 'package:clean_architechture/config/colors.dart';
 import 'package:clean_architechture/data/main/model/item_model.dart';
 import 'package:clean_architechture/presentation/common/widget/widget_common_item.dart';
+import 'package:clean_architechture/presentation/common/widget/widget_custom_expansion_tile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,8 @@ class ExpansionListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ExpansionTile(
+    return CustomExpansionTile(
+      initiallyExpanded: true,
       textColor: AppColors.black,
       iconColor: Colors.orange,
       title: Text(title),
