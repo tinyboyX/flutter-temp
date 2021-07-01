@@ -5,7 +5,9 @@ import 'widget_appbar_action_bar.dart';
 import 'widget_appbar_info_item.dart';
 
 class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({Key? key}) : super(key: key);
+  const AppBarWidget({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +16,8 @@ class AppBarWidget extends StatelessWidget {
       width: double.infinity,
       child: Stack(
         children: [
-           const WidgetAppBarAction(),
-           const WidgetAppbarInfoItem(),
+          const WidgetAppBarAction(),
+          const WidgetAppbarInfoItem(),
         ],
       ),
     );

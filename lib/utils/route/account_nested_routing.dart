@@ -2,7 +2,7 @@ import 'package:clean_architechture/presentation/organize_chart/organize_chart_r
 import 'package:clean_architechture/presentation/report/report_route.dart';
 import 'package:flutter/material.dart';
 
-enum AccountNestedRouteDefine { ReportScreen, OrganizeChartScreen }
+enum AccountNestedRouteDefine { ReportScreen, OrganizeChartScreen , PersonalStatisticScreen}
 
 class AccountNestedAppRouting {
   static MaterialPageRoute generateRoute(RouteSettings settings) {

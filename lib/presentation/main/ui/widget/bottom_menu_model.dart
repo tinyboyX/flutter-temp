@@ -1,4 +1,4 @@
-import 'package:clean_architechture/presentation/account/route_account.dart';
+import 'package:clean_architechture/presentation/account/account_route.dart';
 import 'package:clean_architechture/presentation/category/category_route.dart';
 import 'package:clean_architechture/presentation/home/home_route.dart';
 import 'package:clean_architechture/presentation/login/login_route.dart';

@@ -1,17 +1,20 @@
 import 'package:clean_architechture/config/colors.dart';
 import 'package:clean_architechture/config/styles.dart';
-import 'package:clean_architechture/presentation/account/ui/widget/widget_appbar_extend_info.dart';
-import 'package:clean_architechture/presentation/account/ui/widget/widget_appbar_extend_info2.dart';
+import 'package:clean_architechture/data/main/model/user_model.dart';
+import 'package:clean_architechture/presentation/report/ui/widget/widget_appbar_extend_info.dart';
+import 'package:clean_architechture/presentation/report/ui/widget/widget_appbar_extend_info2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
+import 'package:intl/intl.dart';
 
 class WidgetAppbarInfoReportItem extends StatelessWidget {
   const WidgetAppbarInfoReportItem({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final user = getTempUser();
     return Positioned(
       top: 110.0,
       left: 20.0,
@@ -39,9 +42,14 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
                 const SizedBox(
                   width: 10,
                 ),
-                const CircleAvatar(
+                CircleAvatar(
                   radius: 30,
-                  backgroundColor: Colors.red,
+                  backgroundColor: Colors.black,
+                  child: Container(
+                    margin: const EdgeInsets.all(10),
+                    color: AppColors.white,
+                    child: Text(user.avatar!),
+                  ),
                 ),
                 const SizedBox(
                   width: 10,
@@ -58,25 +66,33 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text(
-                          'Somchai Namsakul',
+                          user.fullName!,
                           style: AppTextStyle.username,
                         ),
-                        RichText(
-                          text: TextSpan(
-                            children: [
-                              WidgetSpan(
-                                child: Icon(
-                                  Icons.verified,
-                                  color: AppColors.blue,
-                                  size: 20,
-                                ),
-                              ),
-                              TextSpan(
-                                text: 'Verified',
-                                style: TextStyle(color: AppColors.blue, fontSize: 14),
-                              ),
-                            ],
-                          ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Container(
+                          alignment: Alignment.topLeft,
+                          child: user.isVerify!
+                              ? RichText(
+                                  text: TextSpan(
+                                    children: [
+                                      WidgetSpan(
+                                        child: Icon(
+                                          Icons.verified,
+                                          color: AppColors.blue,
+                                          size: 20,
+                                        ),
+                                      ),
+                                      TextSpan(
+                                        text: 'Verified',
+                                        style: TextStyle(color: AppColors.blue, fontSize: 14),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              : null,
                         ),
                       ],
                     ),
@@ -84,7 +100,7 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
                       height: 8,
                     ),
                     Text(
-                      'SCM Business (ID:123248214)',
+                      'SCM Business (ID: ${user.scmBusinessID})',
                       style: AppTextStyle.label7,
                     ),
                     const SizedBox(
@@ -94,14 +110,18 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Joined: Datetime',
+                          'Joined: ${DateFormat('dd-MM-yyyy').format(
+                            user.joinDate!,
+                          )}',
                           style: TextStyle(fontSize: 10, color: AppColors.grey),
                         ),
                         const SizedBox(
                           width: 80,
                         ),
                         Text(
-                          'Expired: Datetime',
+                          'Expired: ${DateFormat('dd-MM-yyyy').format(
+                            user.expiredDate!,
+                          )}',
                           style: TextStyle(fontSize: 10, color: AppColors.grey),
                         ),
                       ],

@@ -21,3 +21,16 @@ class MemberModel {
   String cMatching;
   String? hPosition;
 }
+final List<MemberModel> list = [
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+  MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
+];

@@ -1,14 +1,18 @@
 import 'package:clean_architechture/config/colors.dart';
 import 'package:clean_architechture/config/styles.dart';
+import 'package:clean_architechture/data/main/model/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 
 class WidgetAppbarInfoItem extends StatelessWidget {
-  const WidgetAppbarInfoItem({Key? key}) : super(key: key);
+  const WidgetAppbarInfoItem({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final user = getTempUser();
     return Positioned(
       top: 110.0,
       left: 20.0,
@@ -34,12 +38,13 @@ class WidgetAppbarInfoItem extends StatelessWidget {
             const SizedBox(
               width: 10,
             ),
-             CircleAvatar(
+            CircleAvatar(
               radius: 30,
               backgroundColor: Colors.black,
               child: Container(
                 margin: const EdgeInsets.all(10),
                 color: AppColors.white,
+                child: Text(user.avatar!),
               ),
             ),
             const SizedBox(
@@ -54,14 +59,14 @@ class WidgetAppbarInfoItem extends StatelessWidget {
                   height: 20,
                 ),
                 Text(
-                  'Somchai Namsakul',
+                  user.fullName!,
                   style: AppTextStyle.username,
                 ),
                 const SizedBox(
                   height: 8,
                 ),
                 Text(
-                  'SCM Bussiness (ID:123248214)',
+                  'SCM Business (ID: ${user.scmBusinessID})',
                   style: AppTextStyle.label7,
                 )
               ],
@@ -72,23 +77,25 @@ class WidgetAppbarInfoItem extends StatelessWidget {
             Container(
               padding: const EdgeInsets.only(top: 20),
               alignment: Alignment.topLeft,
-              child: RichText(
-                text: TextSpan(
-                  children: [
-                    WidgetSpan(
-                      child: Icon(
-                        Icons.verified,
-                        color: AppColors.blue,
-                        size: 20,
+              child: user.isVerify!
+                  ? RichText(
+                      text: TextSpan(
+                        children: [
+                          WidgetSpan(
+                            child: Icon(
+                              Icons.verified,
+                              color: AppColors.blue,
+                              size: 20,
+                            ),
+                          ),
+                          TextSpan(
+                            text: 'Verified',
+                            style: TextStyle(color: AppColors.blue, fontSize: 14),
+                          ),
+                        ],
                       ),
-                    ),
-                    TextSpan(
-                      text: 'Verified',
-                      style: TextStyle(color: AppColors.blue, fontSize: 14),
-                    ),
-                  ],
-                ),
-              ),
+                    )
+                  : null,
             ),
           ],
         ),

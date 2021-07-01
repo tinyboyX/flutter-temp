@@ -22,20 +22,6 @@ class _OrganizeChartScreenState extends State<OrganizeChartScreen> {
     super.initState();
   }
 
-  final List<MemberModel> _list = [
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-    MemberModel(memberID: 1, memberName: 'SomchaiNamsakil', memberTeam: 'Left', memberLevel: 1, type: 'MB', star: 'SS', cMatching: 'SU', hPosition: '-'),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<OrganizationChartBloc, OrganizationChartState>(
@@ -64,7 +50,7 @@ class _OrganizeChartScreenState extends State<OrganizeChartScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'Left (${_list.length})',
+                              'Left (${list.length})',
                               style: AppTextStyle.label6,
                             ),
                             const Icon(Icons.keyboard_arrow_down_rounded)
@@ -105,9 +91,9 @@ class _OrganizeChartScreenState extends State<OrganizeChartScreen> {
                   ),
                 ),
                 Column(
-                    children: List<Widget>.generate(_list.length, (index) {
+                    children: List<Widget>.generate(list.length, (index) {
                   return WidgetItem(
-                    memberModel: _list[index],
+                    memberModel: list[index],
                     color: !(index % 2 == 0) ? Colors.grey.shade300 : Colors.white,
                   );
                 }))
