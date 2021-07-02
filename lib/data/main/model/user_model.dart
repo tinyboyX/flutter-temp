@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class UserModel {
   UserModel({
     this.avatar,
@@ -8,11 +6,12 @@ class UserModel {
     this.scmBusinessID,
     this.expiredDate,
     this.joinDate,
+    this.gender,
     this.dayOfBirth,
     this.email,
     this.phoneNumber,
     this.citizenship,
-    this.verifyIDCard,
+    this.verifyIDCardPhoto,
     this.verifyBeneficiaryIDCardPhoto,
     this.verifyBookBankPhoto,
     this.verifyMarriageOrRelationshipCertificate,
@@ -25,11 +24,12 @@ class UserModel {
   bool? isVerify;
   DateTime? joinDate;
   DateTime? expiredDate;
+  String? gender;
   String? dayOfBirth;
   String? email;
   String? phoneNumber;
   String? citizenship;
-  bool? verifyIDCard;
+  bool? verifyIDCardPhoto;
   bool? verifyBeneficiaryIDCardPhoto;
   bool? verifyBookBankPhoto;
   bool? verifyMarriageOrRelationshipCertificate;
@@ -43,13 +43,14 @@ UserModel getTempUser(){
     scmBusinessID: '123456',
     joinDate: DateTime.now(),
     expiredDate: DateTime.utc(1989, 11, 9),
+    gender: 'Male',
     dayOfBirth: '20-05-1975',
     email: 'somchai.namsakul@gmail.com',
     phoneNumber: '+66(0)93-976-2212',
     citizenship: 'Thai',
     verifyBeneficiaryIDCardPhoto: true,
     verifyBookBankPhoto: true,
-    verifyIDCard: true,
+    verifyIDCardPhoto: true,
     verifyMarriageOrRelationshipCertificate: true,
     connectFacebook: false,
   );

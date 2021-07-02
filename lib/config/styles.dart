@@ -43,9 +43,24 @@ class AppTextStyle {
       fontWeight: FontWeight.bold,
     );
   }
+
   static TextStyle get label7 {
     return TextStyle(
       fontSize: 12.sp,
+    );
+  }
+
+  static TextStyle get informationLabel {
+    return TextStyle(
+      fontSize: 14.sp,
+      color: Colors.grey.shade500,
+    );
+  }
+
+  static TextStyle get verifiedLabel {
+    return TextStyle(
+      fontSize: 14.sp,
+      color: Colors.greenAccent,
     );
   }
 

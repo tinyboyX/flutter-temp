@@ -1,14 +1,23 @@
+import 'package:clean_architechture/presentation/account_information/account_information_route.dart';
 import 'package:clean_architechture/presentation/organize_chart/organize_chart_route.dart';
 import 'package:clean_architechture/presentation/report/report_route.dart';
 import 'package:flutter/material.dart';
 
-enum AccountNestedRouteDefine { ReportScreen, OrganizeChartScreen , PersonalStatisticScreen}
+enum AccountNestedRouteDefine {
+  ReportScreen,
+  OrganizeChartScreen,
+  PersonalStatisticScreen,
+  AccountInformationScreen,
+  SponsorChartScreen,
+  G1AnalysisScreen,
+}
 
 class AccountNestedAppRouting {
   static MaterialPageRoute generateRoute(RouteSettings settings) {
     final routes = <String, WidgetBuilder>{
       AccountNestedRouteDefine.ReportScreen.name: (_) => ReportRoute.route,
       AccountNestedRouteDefine.OrganizeChartScreen.name: (_) => OrganizeChartRoute.route,
+      AccountNestedRouteDefine.AccountInformationScreen.name: (_) => AccountInformationRoute.route,
     };
 
     final routeBuilder = routes[settings.name];
@@ -26,11 +35,11 @@ class _NoAnimationMaterialPageRoute<T> extends MaterialPageRoute<T> {
     bool maintainState = true,
     bool fullscreenDialog = false,
   }) : super(
-          builder: builder,
-          maintainState: maintainState,
-          settings: settings,
-          fullscreenDialog: fullscreenDialog,
-        );
+    builder: builder,
+    maintainState: maintainState,
+    settings: settings,
+    fullscreenDialog: fullscreenDialog,
+  );
 
   @override
   Widget buildTransitions(_, __, ___, Widget child) => child;

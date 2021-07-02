@@ -1,6 +1,5 @@
 import 'package:clean_architechture/config/navigation_util.dart';
 import 'package:clean_architechture/utils/route/account_nested_routing.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 class ItemModel {
@@ -38,7 +37,13 @@ List<ItemModel> accountItems = [
 ];
 final List<ItemModel> itemsPersonal = [
   ItemModel(icon: Icons.add_task_outlined, title: 'Personal Statistic', isDivide: false),
-  ItemModel(icon: Icons.person_add, title: 'Account Information', isDivide: false),
+  ItemModel(
+      icon: Icons.person_add,
+      title: 'Account Information',
+      isDivide: false,
+      onTap: () {
+        Navigator.pushNamed(NavigationUtil.accountKey.currentContext!, AccountNestedRouteDefine.AccountInformationScreen.name);
+      }),
   ItemModel(
       icon: Icons.album,
       title: 'Organization Chart',

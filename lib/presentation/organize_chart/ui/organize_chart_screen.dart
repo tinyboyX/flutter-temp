@@ -91,12 +91,16 @@ class _OrganizeChartScreenState extends State<OrganizeChartScreen> {
                   ),
                 ),
                 Column(
-                    children: List<Widget>.generate(list.length, (index) {
-                  return WidgetItem(
-                    memberModel: list[index],
-                    color: !(index % 2 == 0) ? Colors.grey.shade300 : Colors.white,
-                  );
-                }))
+                  children: List<Widget>.generate(
+                    list.length,
+                    (index) {
+                      return WidgetItem(
+                        memberModel: list[index],
+                        color: !(index % 2 == 0) ? Colors.grey.shade300 : Colors.white,
+                      );
+                    },
+                  ),
+                ),
               ],
             ),
           ),

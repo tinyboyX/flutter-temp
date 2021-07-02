@@ -264,7 +264,7 @@ class _CustomExpansionTileState extends State<CustomExpansionTile> with SingleTi
                     child: Container(
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Colors.grey.shade300,
+                        color: _isExpanded ? Colors.grey.shade100 : Colors.transparent,
                       ),
                       child: const Icon(Icons.expand_more),
                     ),
