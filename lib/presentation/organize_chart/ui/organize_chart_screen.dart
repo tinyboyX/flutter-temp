@@ -1,8 +1,8 @@
 import 'package:clean_architechture/config/styles.dart';
+import 'package:clean_architechture/presentation/common/widget/chart/widget/widget_chart_appbar.dart';
+import 'package:clean_architechture/presentation/common/widget/chart/widget/widget_chart_item.dart';
 import 'package:clean_architechture/presentation/organize_chart/bloc/organization_chart_bloc.dart';
-import 'package:clean_architechture/presentation/organize_chart/model/member_model.dart';
-import 'package:clean_architechture/presentation/organize_chart/ui/widget/widget_appbar.dart';
-import 'package:clean_architechture/presentation/organize_chart/ui/widget/widget_item.dart';
+import 'package:clean_architechture/data/main/model/chart_item_member_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -31,7 +31,7 @@ class _OrganizeChartScreenState extends State<OrganizeChartScreen> {
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
-                const OrganizeAppBarWidget(),
+                const CommonChartAppBarWidget(),
                 Container(
                   margin: const EdgeInsets.all(10),
                   child: Row(
@@ -50,7 +50,7 @@ class _OrganizeChartScreenState extends State<OrganizeChartScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'Left (${list.length})',
+                              'Left (${listOrganizeChart.length})',
                               style: AppTextStyle.label6,
                             ),
                             const Icon(Icons.keyboard_arrow_down_rounded)
@@ -92,10 +92,10 @@ class _OrganizeChartScreenState extends State<OrganizeChartScreen> {
                 ),
                 Column(
                   children: List<Widget>.generate(
-                    list.length,
+                    listOrganizeChart.length,
                     (index) {
-                      return WidgetItem(
-                        memberModel: list[index],
+                      return WidgetChartItem(
+                        memberModel: listOrganizeChart[index],
                         color: !(index % 2 == 0) ? Colors.grey.shade300 : Colors.white,
                       );
                     },
