@@ -13,40 +13,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11f66012-00dd-4ecb-a560-da1e2534a4f7" name="Default Changelist" comment="finnish account screen">
-      <change afterPath="$PROJECT_DIR$/lib/presentation/sponsor_chart/bloc/sponsor_chart_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/sponsor_chart/bloc/sponsor_chart_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/sponsor_chart/bloc/sponsor_chart_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/sponsor_chart/sponsor_chart_route.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/sponsor_chart/ui/sponsor_chart_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/debug_android_application.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/flutter_assets.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/developmentDebug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/developmentDebug/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/developmentDebug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/developmentDebug/flutter_build.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDevelopmentDebug/tmp/developmentDebug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDevelopmentDebug/tmp/developmentDebug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/developmentDebug/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/developmentDebug/out/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/development/debug/app-development-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/development/debug/app-development-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-development-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-development-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/f58ed05f7a6fba8f3451773989665e4b.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f58ed05f7a6fba8f3451773989665e4b.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/organize_chart/model/member_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/main/model/chart_item_member_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/organize_chart/ui/organize_chart_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/organize_chart/ui/organize_chart_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/organize_chart/ui/widget/widget_appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_appbar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/organize_chart/ui/widget/widget_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/organize_chart/ui/widget/widget_organize_appbar_action.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_appbar_action.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/route/account_nested_routing.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/route/account_nested_routing.dart" afterDir="false" />
+    <list default="true" id="11f66012-00dd-4ecb-a560-da1e2534a4f7" name="Default Changelist" comment="finnish sponsor_chart_screen.dart">
+      <change beforePath="$PROJECT_DIR$/lib/data/main/model/item_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/main/model/item_model.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625198576690</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finnish sponsor_chart_screen.dart">
+      <created>1625200984694</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1625200984694</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +215,8 @@
     <MESSAGE value="refactor code and update UserModel" />
     <MESSAGE value="init page account_information_screen.dart" />
     <MESSAGE value="finnish account screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="finnish account screen" />
+    <MESSAGE value="finnish sponsor_chart_screen.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="finnish sponsor_chart_screen.dart" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="418" width="538" height="209" key="#Dart" timestamp="1624586801185">
@@ -295,18 +271,18 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="441" y="154" width="1037" height="737" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1624948160744" />
-    <state x="555" y="251" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1625198581918">
+    <state x="555" y="251" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1625200988380">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="555" y="251" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1625198581918" />
+    <state x="555" y="251" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1625200988380" />
     <state x="502" y="432" width="456" height="188" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1625130613491">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="502" y="432" width="456" height="188" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.985@0.27.1920.985" timestamp="1625130613491" />
-    <state x="976" y="200" width="641" height="656" key="find.popup" timestamp="1625135762286">
+    <state x="976" y="200" width="641" height="656" key="find.popup" timestamp="1625201045713">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="976" y="200" width="641" height="656" key="find.popup/0.27.1920.985@0.27.1920.985" timestamp="1625135762286" />
+    <state x="976" y="200" width="641" height="656" key="find.popup/0.27.1920.985@0.27.1920.985" timestamp="1625201045713" />
     <state x="623" y="242" width="672" height="678" key="search.everywhere.popup" timestamp="1624607887368">
       <screen x="0" y="27" width="1920" height="985" />
     </state>

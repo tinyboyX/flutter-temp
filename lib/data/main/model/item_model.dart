@@ -51,7 +51,13 @@ final List<ItemModel> itemsPersonal = [
       onTap: () {
         Navigator.pushNamed(NavigationUtil.accountKey.currentContext!, AccountNestedRouteDefine.OrganizeChartScreen.name);
       }),
-  ItemModel(icon: Icons.room_outlined, title: 'Sponsor Chart', isDivide: false),
+  ItemModel(
+      icon: Icons.room_outlined,
+      title: 'Sponsor Chart',
+      isDivide: false,
+      onTap: () {
+        Navigator.pushNamed(NavigationUtil.accountKey.currentContext!, AccountNestedRouteDefine.SponsorChartScreen.name);
+      }),
   ItemModel(isDivide: true),
 ];
 
