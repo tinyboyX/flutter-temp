@@ -139,7 +139,7 @@ class _WidgetChartItemState extends State<WidgetChartItem> {
                         height: 15,
                       ),
                       Text(
-                        widget.memberModel.type,
+                        widget.memberModel.typeApplyLevel,
                         style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                       ),
                     ],

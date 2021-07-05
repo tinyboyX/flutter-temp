@@ -1,5 +1,6 @@
 import 'package:clean_architechture/presentation/account_information/account_information_route.dart';
 import 'package:clean_architechture/presentation/organize_chart/organize_chart_route.dart';
+import 'package:clean_architechture/presentation/personal_statistic/personal_statistic_route.dart';
 import 'package:clean_architechture/presentation/report/report_route.dart';
 import 'package:clean_architechture/presentation/sponsor_chart/sponsor_chart_route.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,6 @@ enum AccountNestedRouteDefine {
   SponsorChartScreen,
   G1AnalysisScreen,
 }
-
 class AccountNestedAppRouting {
   static MaterialPageRoute generateRoute(RouteSettings settings) {
     final routes = <String, WidgetBuilder>{
@@ -20,6 +20,7 @@ class AccountNestedAppRouting {
       AccountNestedRouteDefine.OrganizeChartScreen.name: (_) => OrganizeChartRoute.route,
       AccountNestedRouteDefine.AccountInformationScreen.name: (_) => AccountInformationRoute.route,
       AccountNestedRouteDefine.SponsorChartScreen.name: (_) => SponsorChartRoute.route,
+      AccountNestedRouteDefine.PersonalStatisticScreen.name: (_) => PersonalStatisticRoute.route,
     };
 
     final routeBuilder = routes[settings.name];

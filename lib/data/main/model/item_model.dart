@@ -36,7 +36,13 @@ List<ItemModel> accountItems = [
   ItemModel(icon: Icons.help, title: 'Help Center', isDivide: false),
 ];
 final List<ItemModel> itemsPersonal = [
-  ItemModel(icon: Icons.add_task_outlined, title: 'Personal Statistic', isDivide: false),
+  ItemModel(
+      icon: Icons.add_task_outlined,
+      title: 'Personal Statistic',
+      isDivide: false,
+      onTap: () {
+        Navigator.pushNamed(NavigationUtil.accountKey.currentContext!, AccountNestedRouteDefine.PersonalStatisticScreen.name);
+      }),
   ItemModel(
       icon: Icons.person_add,
       title: 'Account Information',
