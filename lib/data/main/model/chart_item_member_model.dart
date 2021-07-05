@@ -47,35 +47,9 @@ class MemberModel {
   String? rightPV;
   String? pvLevel;
 }
-
-MemberModel getTempMember() {
-  return MemberModel(
-      memberID: 1,
-      memberName: 'Somchai Namsakil',
-      memberTeam: 'Left',
-      memberLevel: 1,
-      typeApplyLevel: 'MB',
-      star: 'SS',
-      currentMatching: 'SU',
-      highestPosition: '-',
-      applyDate: '2018-05-21',
-      expireDate: '2021-05-21',
-      upgradeExpireDate: '2021-05-21',
-      status: true,
-      maxPin: '-',
-      lastPin: '01SU',
-      newSponsor: '0',
-      memToSup: '0',
-      memToEx: '0',
-      ownPV: '0',
-      leftPV: '40',
-      rightPV: '0',
-      pvLevel: '-');
-}
-
 final List<MemberModel> listOrganizeChart = [
   MemberModel(
-      memberID: 1,
+      memberID: 123456,
       memberName: 'Somchai Namsakil',
       memberTeam: 'Left',
       memberLevel: 1,
@@ -97,7 +71,7 @@ final List<MemberModel> listOrganizeChart = [
       rightPV: '0',
       pvLevel: '-'),
   MemberModel(
-      memberID: 1,
+      memberID: 123456,
       memberName: 'Somchai Namsakil',
       memberTeam: 'Left',
       memberLevel: 1,
@@ -119,7 +93,7 @@ final List<MemberModel> listOrganizeChart = [
       rightPV: '0',
       pvLevel: '-'),
   MemberModel(
-      memberID: 1,
+      memberID: 123456,
       memberName: 'Somchai Namsakil',
       memberTeam: 'Left',
       memberLevel: 1,
@@ -141,7 +115,7 @@ final List<MemberModel> listOrganizeChart = [
       rightPV: '0',
       pvLevel: '-'),
   MemberModel(
-      memberID: 1,
+      memberID: 123456,
       memberName: 'Somchai Namsakil',
       memberTeam: 'Left',
       memberLevel: 1,
@@ -163,7 +137,7 @@ final List<MemberModel> listOrganizeChart = [
       rightPV: '0',
       pvLevel: '-'),
   MemberModel(
-      memberID: 1,
+      memberID: 123456,
       memberName: 'Somchai Namsakil',
       memberTeam: 'Left',
       memberLevel: 1,

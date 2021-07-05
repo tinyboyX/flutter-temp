@@ -101,7 +101,7 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
                     ),
                     Text(
                       'SCM Business (ID: ${user.scmBusinessID})',
-                      style: AppTextStyle.label7,
+                      style: AppTextStyle.text7,
                     ),
                     const SizedBox(
                       height: 8,

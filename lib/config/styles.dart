@@ -44,7 +44,20 @@ class AppTextStyle {
     );
   }
 
+  static TextStyle get text6 {
+    return TextStyle(
+      fontSize: 14.sp,
+    );
+  }
+
   static TextStyle get label7 {
+    return TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.bold,
+    );
+  }
+
+  static TextStyle get text7 {
     return TextStyle(
       fontSize: 12.sp,
     );
@@ -86,12 +99,12 @@ class AppTextStyle {
     );
   }
 
-  static TextStyle focusBottomBarTextStyle = TextStyle(
+  static TextStyle focusBottomBarTextStyle = const TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.bold,
     color: AppColors.orange,
   );
-  static TextStyle unFocusBottomBarTextStyle = TextStyle(
+  static TextStyle unFocusBottomBarTextStyle = const TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.normal,
     color: AppColors.grey,

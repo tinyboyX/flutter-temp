@@ -5,7 +5,7 @@ import 'package:clean_architechture/presentation/common/widget/widget_notificati
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'widget/widget_g1_analysis_item.dart';
+import 'widget/widget_g1_analysis_grid_item.dart';
 
 class G1AnalysisScreen extends StatelessWidget {
   const G1AnalysisScreen({Key? key}) : super(key: key);

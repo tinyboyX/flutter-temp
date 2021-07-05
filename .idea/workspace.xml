@@ -13,14 +13,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11f66012-00dd-4ecb-a560-da1e2534a4f7" name="Default Changelist" comment="update model">
-      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/bloc/g1_analysis_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/bloc/g1_analysis_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/bloc/g1_analysis_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/g1_analysis_route.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/g1_analysis_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_data_item.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_item.dart" afterDir="false" />
+    <list default="true" id="11f66012-00dd-4ecb-a560-da1e2534a4f7" name="Default Changelist" comment="fix row and column for chart">
+      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/model/grid_view_item_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_item_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_show_data.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/debug_android_application.stamp" afterDir="false" />
@@ -43,13 +39,13 @@
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/f58ed05f7a6fba8f3451773989665e4b.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f58ed05f7a6fba8f3451773989665e4b.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/config/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/config/colors.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/config/styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/config/styles.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data/main/model/chart_item_member_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/main/model/chart_item_member_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/main/model/item_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/main/model/item_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/sponsor_chart/ui/sponsor_chart_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/sponsor_chart/ui/sponsor_chart_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/route/account_nested_routing.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/route/account_nested_routing.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/account/ui/widget/widget_appbar_info_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/account/ui/widget/widget_appbar_info_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/g1_analysis_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/g1_analysis_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_data_item.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_grid_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/report/ui/widget/widget_appbar_report_info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/report/ui/widget/widget_appbar_report_info.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,15 +93,15 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/presentation/account/ui/widget" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/presentation/g1_analysis/ui" />
+      <recent name="$PROJECT_DIR$/lib/presentation/g1_analysis" />
       <recent name="$PROJECT_DIR$/lib/data/main/model" />
       <recent name="$PROJECT_DIR$/lib/data" />
       <recent name="$PROJECT_DIR$/lib/presentation/common/widget/chart/" />
-      <recent name="$PROJECT_DIR$/lib/presentation" />
-      <recent name="$PROJECT_DIR$/lib/presentation/report/ui/widget" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/presentation/account/ui/widget" />
     </key>
   </component>
   <component name="RunManager" selected="Flutter.development">
@@ -231,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625451903693</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix row and column for chart">
+      <created>1625470617734</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1625470617734</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +262,8 @@
     <MESSAGE value="finnish account screen" />
     <MESSAGE value="finnish sponsor_chart_screen.dart" />
     <MESSAGE value="update model" />
-    <option name="LAST_COMMIT_MESSAGE" value="update model" />
+    <MESSAGE value="fix row and column for chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix row and column for chart" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="418" width="538" height="209" key="#Dart" timestamp="1624586801185">
@@ -302,25 +306,25 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="315" y="143" width="820" height="760" key="Github.UntrackedFilesDialog/0.27.1920.985@0.27.1920.985" timestamp="1624434003278" />
-    <state width="1415" height="441" key="GridCell.Tab.0.bottom" timestamp="1625470120712">
+    <state width="1874" height="441" key="GridCell.Tab.0.bottom" timestamp="1625477829619">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1415" height="441" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1625470120712" />
+    <state width="1874" height="441" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1625477829619" />
     <state width="1415" height="405" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1625209161248" />
-    <state width="1415" height="441" key="GridCell.Tab.0.center" timestamp="1625470120711">
+    <state width="1874" height="441" key="GridCell.Tab.0.center" timestamp="1625477829618">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1415" height="441" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1625470120711" />
+    <state width="1874" height="441" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1625477829618" />
     <state width="1415" height="405" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1625209161247" />
-    <state width="1415" height="441" key="GridCell.Tab.0.left" timestamp="1625470120711">
+    <state width="1874" height="441" key="GridCell.Tab.0.left" timestamp="1625477829617">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1415" height="441" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1625470120711" />
+    <state width="1874" height="441" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1625477829617" />
     <state width="1415" height="405" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1625209161246" />
-    <state width="1415" height="441" key="GridCell.Tab.0.right" timestamp="1625470120711">
+    <state width="1874" height="441" key="GridCell.Tab.0.right" timestamp="1625477829618">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1415" height="441" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1625470120711" />
+    <state width="1874" height="441" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1625477829618" />
     <state width="1415" height="405" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1625209161247" />
     <state x="313" y="265" width="824" height="515" key="IDE.errors.dialog" timestamp="1625130604096">
       <screen x="0" y="27" width="1920" height="985" />
@@ -330,10 +334,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="441" y="154" width="1037" height="737" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1624948160744" />
-    <state x="555" y="266" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1625451920861">
+    <state x="555" y="266" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1625470620463">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="266" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1625451920861" />
+    <state x="555" y="266" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1625470620463" />
     <state x="555" y="251" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1625201135551" />
     <state x="502" y="460" width="456" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1625452793087">
       <screen x="0" y="27" width="1920" height="1053" />
