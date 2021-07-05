@@ -13,40 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11f66012-00dd-4ecb-a560-da1e2534a4f7" name="Default Changelist" comment="fix row and column for chart">
-      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/model/grid_view_item_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_item_data.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_show_data.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/debug_android_application.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/flutter_assets.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f0f98554b9d669e81e376804bcbd66d9/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/developmentDebug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/developmentDebug/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/developmentDebug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/developmentDebug/flutter_build.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDevelopmentDebug/tmp/developmentDebug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDevelopmentDebug/tmp/developmentDebug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/developmentDebug/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/developmentDebug/out/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/development/debug/app-development-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/development/debug/app-development-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-development-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-development-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/f58ed05f7a6fba8f3451773989665e4b.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f58ed05f7a6fba8f3451773989665e4b.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/config/styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/config/styles.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/main/model/chart_item_member_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/main/model/chart_item_member_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/account/ui/widget/widget_appbar_info_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/account/ui/widget/widget_appbar_info_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/g1_analysis_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/g1_analysis_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_data_item.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_grid_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/report/ui/widget/widget_appbar_report_info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/report/ui/widget/widget_appbar_report_info.dart" afterDir="false" />
-    </list>
+    <list default="true" id="11f66012-00dd-4ecb-a560-da1e2534a4f7" name="Default Changelist" comment="fix row and column for chart" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,15 +60,15 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/presentation/account/ui/widget" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/presentation/g1_analysis/ui" />
       <recent name="$PROJECT_DIR$/lib/presentation/g1_analysis" />
       <recent name="$PROJECT_DIR$/lib/data/main/model" />
       <recent name="$PROJECT_DIR$/lib/data" />
       <recent name="$PROJECT_DIR$/lib/presentation/common/widget/chart/" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/presentation/account/ui/widget" />
     </key>
   </component>
   <component name="RunManager" selected="Flutter.development">
