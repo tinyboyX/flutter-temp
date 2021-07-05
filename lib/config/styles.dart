@@ -96,4 +96,20 @@ class AppTextStyle {
     fontWeight: FontWeight.normal,
     color: AppColors.grey,
   );
+
+  static TextStyle get activeStatus {
+    return TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.bold,
+      color: AppColors.activeColor,
+    );
+  }
+
+  static TextStyle get notActiveStatus {
+    return TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.bold,
+      color: AppColors.notActiveColor,
+    );
+  }
 }

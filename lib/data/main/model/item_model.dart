@@ -68,15 +68,45 @@ final List<ItemModel> itemsPersonal = [
 ];
 
 final List<ItemModel> itemsDirectSponsor = [
-  ItemModel(icon: Icons.add_task_outlined, title: 'G1 Analysis', isDivide: false),
-  ItemModel(icon: Icons.add_task_outlined, title: 'Direct Sponsor Analysis', isDivide: false),
-  ItemModel(icon: Icons.add_task_outlined, title: 'New Pin of Direct Sponsor Team', isDivide: false),
-  ItemModel(icon: Icons.add_task_outlined, title: 'Matching Pin of Direct Sponsor Team', isDivide: false),
-  ItemModel(icon: Icons.add_task_outlined, title: 'New Register & Update SE EX S. Team', isDivide: false),
+  ItemModel(
+      icon: Icons.add_task_outlined,
+      title: 'G1 Analysis',
+      isDivide: false,
+      onTap: () {
+        Navigator.pushNamed(NavigationUtil.accountKey.currentContext!, AccountNestedRouteDefine.G1AnalysisScreen.name);
+      }),
+  ItemModel(
+    icon: Icons.add_task_outlined,
+    title: 'Direct Sponsor Analysis',
+    isDivide: false,
+  ),
+  ItemModel(
+    icon: Icons.add_task_outlined,
+    title: 'New Pin of Direct Sponsor Team',
+    isDivide: false,
+  ),
+  ItemModel(
+    icon: Icons.add_task_outlined,
+    title: 'Matching Pin of Direct Sponsor Team',
+    isDivide: false,
+  ),
+  ItemModel(
+    icon: Icons.add_task_outlined,
+    title: 'New Register & Update SE EX S. Team',
+    isDivide: false,
+  ),
   ItemModel(isDivide: true),
 ];
 final List<ItemModel> itemsTravelBonus = [
-  ItemModel(icon: Icons.add_task_outlined, title: 'Trip Progress', isDivide: false),
-  ItemModel(icon: Icons.person_add, title: 'Travel PV History', isDivide: false),
+  ItemModel(
+    icon: Icons.add_task_outlined,
+    title: 'Trip Progress',
+    isDivide: false,
+  ),
+  ItemModel(
+    icon: Icons.person_add,
+    title: 'Travel PV History',
+    isDivide: false,
+  ),
   ItemModel(isDivide: true),
 ];

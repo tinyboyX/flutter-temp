@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static final white = Colors.white;
-  static final black = Colors.black;
-  static final blue = Colors.blue;
-  static final orangeAccent = Colors.orangeAccent;
-  static final orange = Colors.orange;
-  static final red = Colors.red;
-  static final grey = Colors.grey;
-  static final lightBlue = const Color(0xFF7AC3FC);
-  static final lightOrange = const Color(0xFFFACF8E);
+  static const white = Colors.white;
+  static const black = Colors.black;
+  static const blue = Colors.blue;
+  static const orangeAccent = Colors.orangeAccent;
+  static const orange = Colors.orange;
+  static const red = Colors.red;
+  static const grey = Colors.grey;
+  static const lightBlue = const Color(0xFF7AC3FC);
+  static const lightOrange = const Color(0xFFFACF8E);
+  static const activeColor = Colors.green;
+  static const notActiveColor = Colors.red;
 }

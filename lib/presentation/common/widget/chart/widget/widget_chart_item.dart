@@ -1,6 +1,6 @@
 import 'package:clean_architechture/config/styles.dart';
-import 'package:clean_architechture/presentation/common/widget/widget_notification_icon.dart';
 import 'package:clean_architechture/data/main/model/chart_item_member_model.dart';
+import 'package:clean_architechture/presentation/common/widget/widget_notification_icon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -45,28 +45,41 @@ class _WidgetChartItemState extends State<WidgetChartItem> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          widget.memberModel.memberID.toString(),
-                          style: AppTextStyle.memberID,
-                        ),
-                        Text(
-                          widget.memberModel.memberName,
-                          style: AppTextStyle.label6,
-                        ),
-                      ],
+                    child: SizedBox(
+                      width: 150,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            widget.memberModel.memberID.toString(),
+                            style: AppTextStyle.memberID,
+                          ),
+                          Text(
+                            widget.memberModel.memberName,
+                            style: AppTextStyle.label6,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                  Text(
-                    widget.memberModel.memberTeam,
-                    style: AppTextStyle.label6,
+                  SizedBox(
+                    width: 50,
+                    child: Center(
+                      child: Text(
+                        widget.memberModel.memberTeam,
+                        style: AppTextStyle.label6,
+                      ),
+                    ),
                   ),
-                  Text(
-                    widget.memberModel.memberLevel.toString(),
-                    style: AppTextStyle.label6,
+                  SizedBox(
+                    width: 50,
+                    child: Center(
+                      child: Text(
+                        widget.memberModel.memberLevel.toString(),
+                        style: AppTextStyle.label6,
+                      ),
+                    ),
                   ),
                   WidgetNotificationIcon(
                     iconData: !selected ? Icons.keyboard_arrow_down_rounded : Icons.keyboard_arrow_up_rounded,

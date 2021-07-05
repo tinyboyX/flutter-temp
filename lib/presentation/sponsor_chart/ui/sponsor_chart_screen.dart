@@ -2,6 +2,7 @@ import 'package:clean_architechture/config/styles.dart';
 import 'package:clean_architechture/data/main/model/chart_item_member_model.dart';
 import 'package:clean_architechture/presentation/common/widget/chart/widget/widget_chart_appbar.dart';
 import 'package:clean_architechture/presentation/common/widget/chart/widget/widget_chart_item.dart';
+import 'package:clean_architechture/presentation/common/widget/widget_notification_icon.dart';
 import 'package:clean_architechture/presentation/sponsor_chart/bloc/sponsor_chart_bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -57,23 +58,37 @@ class SponsorChartScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text(
-                        'User',
-                        style: AppTextStyle.label6,
+                      SizedBox(
+                        width: 150,
+                        child: Text(
+                          'User',
+                          style: AppTextStyle.label6,
+                        ),
                       ),
-                      const SizedBox(
-                        width: 90,
+                      SizedBox(
+                        width: 50,
+                        child: Center(
+                          child: Text(
+                            'Team',
+                            style: AppTextStyle.label6,
+                          ),
+                        ),
                       ),
-                      Text(
-                        'Team',
-                        style: AppTextStyle.label6,
+                      SizedBox(
+                        width: 50,
+                        child: Center(
+                          child: Text(
+                            'ID',
+                            style: AppTextStyle.label6,
+                          ),
+                        ),
                       ),
-                      Text(
-                        'Level',
-                        style: AppTextStyle.label6,
-                      ),
-                      const SizedBox(
-                        width: 40,
+                      WidgetNotificationIcon(
+                        onTap: () {},
+                        iconData: Icons.keyboard_arrow_down_rounded,
+                        color: Colors.transparent,
+                        backgroundColor: Colors.transparent,
+                        size: 25,
                       )
                     ],
                   ),
