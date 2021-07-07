@@ -1,4 +1,6 @@
+import 'package:clean_architechture/config/colors.dart';
 import 'package:clean_architechture/config/navigation_util.dart';
+import 'package:clean_architechture/config/styles.dart';
 import 'package:clean_architechture/config/theme.dart';
 import 'package:clean_architechture/data/main/model/item_model.dart';
 import 'package:clean_architechture/presentation/account/bloc/account_bloc.dart';
@@ -6,7 +8,6 @@ import 'package:clean_architechture/presentation/account/ui/widget/widget_list_i
 import 'package:clean_architechture/presentation/common/widget/widget_custom_button.dart';
 import 'package:clean_architechture/utils/di/injection.dart';
 import 'package:clean_architechture/utils/route/account_nested_routing.dart';
-import 'package:clean_architechture/utils/session_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,7 +15,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'widget/widget_appbar.dart';
 
 class AccountScreen extends StatefulWidget {
-    const AccountScreen({Key? key}) : super(key: key);
+  const AccountScreen({Key? key}) : super(key: key);
 
   @override
   _AccountScreenState createState() => _AccountScreenState();
@@ -23,7 +24,6 @@ class AccountScreen extends StatefulWidget {
 class _AccountScreenState extends State<AccountScreen> {
   @override
   Widget build(BuildContext context) {
-
     var appTheme = getIt<AppTheme>();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -44,10 +44,17 @@ class _AccountScreenState extends State<AccountScreen> {
                     items: accountItems,
                   ),
                   CustomButton(
-                      onPressed: () {
-                        print('Log out');
-                      },
-                      text: 'LOG OUT'),
+                    bgColor: AppColors.white,
+                    onPressed: () {
+                      print('Log out');
+                    },
+                    text: 'LOG OUT',
+                    appTextStyle: AppTextStyle.buttonLabel,
+                    paddingTop: 15,
+                    paddingLeft: 30,
+                    paddingRight: 30,
+                    paddingBot: 15,
+                  ),
                 ],
               ),
             ),
@@ -55,6 +62,11 @@ class _AccountScreenState extends State<AccountScreen> {
         },
       ),
     );
+
+    //
+    // return Navigator(
+    //
+    // );
   }
 
   @override

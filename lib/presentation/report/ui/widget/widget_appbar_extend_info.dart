@@ -15,7 +15,7 @@ class WidgetExtendInfo extends StatelessWidget {
           Container(
             height: 30,
             width: 30,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: AppColors.lightBlue,
             ),
@@ -36,11 +36,11 @@ class WidgetExtendInfo extends StatelessWidget {
           Container(
             height: 30,
             width: 30,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: AppColors.lightOrange,
             ),
-            child: Center(
+            child: const Center(
               child: Icon(
                 Icons.backup,
                 color: AppColors.orange,

@@ -29,8 +29,8 @@ class ItemCommon extends StatelessWidget {
         height: 60,
         child: Row(
           children: [
-            const Icon(
-              Icons.image,
+            Icon(
+              itemModel.icon,
               color: Colors.orange,
             ),
             const SizedBox(

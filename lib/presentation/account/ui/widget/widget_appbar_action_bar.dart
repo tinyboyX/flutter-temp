@@ -1,5 +1,4 @@
 import 'package:clean_architechture/config/colors.dart';
-import 'package:clean_architechture/config/navigation_util.dart';
 import 'package:clean_architechture/config/styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +14,7 @@ class WidgetAppBarAction extends StatelessWidget {
     return Container(
       height: 160,
       decoration: BoxDecoration(
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [

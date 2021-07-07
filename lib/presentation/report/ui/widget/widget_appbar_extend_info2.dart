@@ -19,7 +19,7 @@ class WidgetExtendInfo2 extends StatelessWidget {
           Container(
             height: 30,
             width: 50,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.rectangle,
               color: AppColors.lightOrange,
             ),
@@ -57,7 +57,7 @@ class WidgetExtendInfo2 extends StatelessWidget {
           Container(
             height: 30,
             width: 30,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: AppColors.lightOrange,
             ),

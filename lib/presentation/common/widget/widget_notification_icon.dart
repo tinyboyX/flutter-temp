@@ -61,7 +61,7 @@ class WidgetNotificationIcon extends StatelessWidget {
                 child: Center(
                     child: Text(
                   '$notificationCount',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 10,
                     color: AppColors.white,
                     fontWeight: FontWeight.bold,

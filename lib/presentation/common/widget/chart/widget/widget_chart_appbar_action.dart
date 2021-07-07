@@ -12,7 +12,7 @@ class OrganizeWidgetAppBarAction extends StatelessWidget {
     return Container(
       height: 160,
       decoration: BoxDecoration(
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [

@@ -9,11 +9,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final GlobalKey _keyRed = GlobalKey();
-  String containerSize = "";
-
-  String get _containerSize =>
-      containerSize.isNotEmpty ? "Container Width Height : $containerSize" : "";
+  // final GlobalKey _keyRed = GlobalKey();
+  // String containerSize = "";
+  //
+  // String get _containerSize =>
+  //     containerSize.isNotEmpty ? "Container Width Height : $containerSize" : "";
 
   @override
   Widget build(BuildContext context) {
@@ -78,12 +78,12 @@ class _HomeScreenState extends State<HomeScreen> {
     // );
   }
 
-  void _getSizes() {
-    final renderBoxRed = _keyRed.currentContext!.findRenderObject();
-    final sizeRed = renderBoxRed!.paintBounds.size;
-    print("SIZE of Red: $sizeRed");
-    setState(() {
-      containerSize = sizeRed.toString();
-    });
-  }
+// void _getSizes() {
+//   final renderBoxRed = _keyRed.currentContext!.findRenderObject();
+//   final sizeRed = renderBoxRed!.paintBounds.size;
+//   print("SIZE of Red: $sizeRed");
+//   setState(() {
+//     containerSize = sizeRed.toString();
+//   });
+// }
 }

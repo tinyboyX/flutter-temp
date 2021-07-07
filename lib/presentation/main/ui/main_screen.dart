@@ -14,6 +14,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  PageController pageController = PageController(initialPage: 0);
   late MainBloc bloc;
 
   @override
@@ -28,18 +29,24 @@ class _MainScreenState extends State<MainScreen> {
       body: Column(
         children: [
           Expanded(
-            child: BlocConsumer<MainBloc, MainState>(
-                listener: (context, state) {},
-                builder: (context, state) {
-                  return PageView(
-                    physics: const NeverScrollableScrollPhysics(),
-                    controller: bloc.pageController,
-                    onPageChanged: (index) {
-                      bloc.add(ScrollMenuItemEvent(index: index));
-                    },
-                    children: bloc.menuItems.map((bottomMenu) => bottomMenu.page).toList(),
-                  );
-                }),
+            child: BlocConsumer<MainBloc, MainState>(listener: (context, state) {
+              if (state is SelectIndexState) {
+                pageController.animateToPage(
+                  state.index!,
+                  duration: const Duration(microseconds: 200),
+                  curve: Curves.easeIn,
+                );
+              }
+            }, builder: (context, state) {
+              return PageView(
+                physics: const NeverScrollableScrollPhysics(),
+                controller: pageController,
+                onPageChanged: (index) {
+                  bloc.add(ScrollMenuItemEvent(index: index));
+                },
+                children: bloc.menuItems.map((bottomMenu) => bottomMenu.page).toList(),
+              );
+            }),
           ),
           const BottomMenuWidget()
         ],

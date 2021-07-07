@@ -15,7 +15,6 @@ class AppBarReportWidget extends StatelessWidget {
         children: [
           const WidgetAppBarReportAction(),
           const WidgetAppbarInfoReportItem(),
-          // WidgetAppbarInfoItem(),
         ],
       ),
     );

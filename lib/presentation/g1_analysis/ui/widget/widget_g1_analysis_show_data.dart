@@ -1,6 +1,6 @@
 import 'package:clean_architechture/config/colors.dart';
 import 'package:clean_architechture/config/styles.dart';
-import 'package:clean_architechture/presentation/g1_analysis/model/grid_view_item_model.dart';
+import 'package:clean_architechture/data/main/model/grid_view_item_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

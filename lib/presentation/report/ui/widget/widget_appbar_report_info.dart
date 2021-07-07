@@ -76,7 +76,7 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
                           alignment: Alignment.topLeft,
                           child: user.isVerify!
                               ? RichText(
-                                  text: TextSpan(
+                                  text: const TextSpan(
                                     children: [
                                       WidgetSpan(
                                         child: Icon(
@@ -113,7 +113,7 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
                           'Joined: ${DateFormat('dd-MM-yyyy').format(
                             user.joinDate!,
                           )}',
-                          style: TextStyle(fontSize: 10, color: AppColors.grey),
+                          style: const TextStyle(fontSize: 10, color: AppColors.grey),
                         ),
                         const SizedBox(
                           width: 80,
@@ -122,7 +122,7 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
                           'Expired: ${DateFormat('dd-MM-yyyy').format(
                             user.expiredDate!,
                           )}',
-                          style: TextStyle(fontSize: 10, color: AppColors.grey),
+                          style: const TextStyle(fontSize: 10, color: AppColors.grey),
                         ),
                       ],
                     )
@@ -154,7 +154,7 @@ class WidgetAppbarInfoReportItem extends StatelessWidget {
                   const SizedBox(
                     width: 20,
                   ),
-                  Center(
+                  const Center(
                     child: Expanded(
                       child: VerticalDivider(
                         width: 2,

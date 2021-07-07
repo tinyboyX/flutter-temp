@@ -6,7 +6,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:meta/meta.dart';
 
 part 'main_event.dart';
-
 part 'main_state.dart';
 
 class MainBloc extends Bloc<MainEvent, MainState> {
@@ -21,29 +20,17 @@ class MainBloc extends Bloc<MainEvent, MainState> {
     BottomMenuItem.CATEGORY,
     BottomMenuItem.ACCOUNT,
   ];
-  PageController pageController = PageController(initialPage: 0);
   late BottomMenuItem selectedItem;
 
   @override
-  Stream<MainState> mapEventToState(
-    MainEvent event,
-  ) async* {
+  Stream<MainState> mapEventToState(MainEvent event) async* {
     if (event is SelectMenuItemEvent) {
-      selectPage(event.index!);
-      yield SelectIndexState();
+      selectedItem = menuItems[event.index!];
+      yield SelectIndexState(index: event.index!);
     }
     if (event is ScrollMenuItemEvent) {
       selectedItem = menuItems[event.index!];
       yield ScrollIndexState();
     }
-  }
-
-  void selectPage(int index) {
-    selectedItem = menuItems[index];
-    pageController.animateToPage(
-      index,
-      duration: const Duration(microseconds: 200),
-      curve: Curves.easeIn,
-    );
   }
 }

@@ -57,6 +57,13 @@ class AppTextStyle {
     );
   }
 
+  static TextStyle get label8 {
+    return TextStyle(
+      fontSize: 10.sp,
+      fontWeight: FontWeight.bold,
+    );
+  }
+
   static TextStyle get text7 {
     return TextStyle(
       fontSize: 12.sp,
@@ -74,6 +81,14 @@ class AppTextStyle {
     return TextStyle(
       fontSize: 14.sp,
       color: Colors.greenAccent,
+    );
+  }
+
+  static TextStyle get dataText6 {
+    return TextStyle(
+      fontSize: 16.sp,
+      color: Colors.orange,
+      fontWeight: FontWeight.w700,
     );
   }
 
@@ -125,4 +140,12 @@ class AppTextStyle {
       color: AppColors.notActiveColor,
     );
   }
+  static TextStyle get textPersonalStatisticButton {
+    return TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.bold,
+      color: AppColors.white,
+    );
+  }
+
 }

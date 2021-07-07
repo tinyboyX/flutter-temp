@@ -1,6 +1,5 @@
-import 'package:clean_architechture/config/colors.dart';
 import 'package:clean_architechture/data/main/model/chart_item_member_model.dart';
-import 'package:clean_architechture/presentation/g1_analysis/model/grid_view_item_model.dart';
+import 'package:clean_architechture/data/main/model/grid_view_item_model.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'widget_g1_analysis_show_data.dart';
@@ -99,7 +98,7 @@ class WidgetG1AnalysisItemData extends StatelessWidget {
       child: Container(
           height: selected ? 400 : 0,
           child: GridView.count(
-            padding: EdgeInsets.symmetric(vertical: 5),
+            padding: const EdgeInsets.symmetric(vertical: 5),
             physics: const NeverScrollableScrollPhysics(),
             crossAxisCount: 4,
             children: List<Widget>.generate(

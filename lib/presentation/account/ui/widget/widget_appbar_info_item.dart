@@ -79,7 +79,7 @@ class WidgetAppbarInfoItem extends StatelessWidget {
               alignment: Alignment.topLeft,
               child: user.isVerify!
                   ? RichText(
-                      text: TextSpan(
+                      text: const TextSpan(
                         children: [
                           WidgetSpan(
                             child: Icon(
