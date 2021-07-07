@@ -9,7 +9,7 @@ class AppColors {
   static const red = Colors.red;
   static const grey = Colors.grey;
   static const lightBlue = Color(0xFF7AC3FC);
-  static const lightOrange = Color(0xFFFACF8E);
+  static const lightOrange = Color(0xFFFFDAAD);
   static const activeColor = Colors.green;
   static const notActiveColor = Colors.red;
 }

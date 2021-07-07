@@ -1,88 +1,253 @@
 import 'package:clean_architechture/config/colors.dart';
+import 'package:clean_architechture/config/styles.dart';
+import 'package:clean_architechture/presentation/personal_statistic/model/canvas_data_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class WidgetPersonalStatisticPVProgressBar extends StatelessWidget {
-  const WidgetPersonalStatisticPVProgressBar({Key? key}) : super(key: key);
+  const WidgetPersonalStatisticPVProgressBar({Key? key, required this.value}) : super(key: key);
+  final double value;
 
   @override
   Widget build(BuildContext context) {
-    //Size(371.4, 104.4)
-    return Container(
-      decoration: BoxDecoration(
-        color: AppColors.white,
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: CustomPaint(
-        painter: MyPainter(),
-        child: Stack(
-          children: [
-            Positioned(
-              top: (104.4 - 20) / 2,
-              left: (371.4 * 0.9 / 5 * 1),
-              child: Container(
-                width: 20,
-                height: 20,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.white,
-                  border: Border.all(
-                    color: AppColors.orange,
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        final canvasDataModel = CanvasDataModel(size: Size(constraints.maxWidth, constraints.maxHeight), value: value);
+        return Container(
+          decoration: BoxDecoration(
+            color: AppColors.white,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: CustomPaint(
+            painter: MyPainter(canvasDataModel: canvasDataModel),
+            child: Stack(
+              children: [
+                Positioned(
+                  top: (constraints.maxHeight - 20) / 2,
+                  left: ((constraints.maxWidth + 20) * 0.8 / 4 * 1),
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 20,
+                        height: 20,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: canvasDataModel.value >= CanvasDataModel.bronzeValue ? AppColors.orange : AppColors.lightOrange,
+                          border: Border.all(
+                            color: AppColors.orange,
+                          ),
+                        ),
+                        child: Icon(
+                          FontAwesomeIcons.medal,
+                          color: canvasDataModel.value >= CanvasDataModel.bronzeValue ? AppColors.white : AppColors.orange,
+                          size: 10,
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          const SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                            'Bronze',
+                            style: AppTextStyle.textCanvasText,
+                          ),
+                          const SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                            '10,000 PV',
+                            style: AppTextStyle.textCanvasText,
+                          ),
+                        ],
+                      )
+                    ],
                   ),
                 ),
-              ),
-            ),
-            Positioned(
-              top: (104.4 - 20) / 2,
-              left: (371.4 * 0.9 / 5 * 2),
-              child: Container(
-                width: 20,
-                height: 20,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.red,
+                Positioned(
+                  top: (constraints.maxHeight - 20) / 2,
+                  left: ((constraints.maxWidth + 20) * 0.8 / 4 * 2),
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 20,
+                        height: 20,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: canvasDataModel.value >= CanvasDataModel.silverValue ? AppColors.orange : AppColors.lightOrange,
+                          border: Border.all(
+                            color: AppColors.orange,
+                          ),
+                        ),
+                        child: Icon(
+                          FontAwesomeIcons.medal,
+                          color: canvasDataModel.value >= CanvasDataModel.silverValue ? AppColors.white : AppColors.orange,
+                          size: 10,
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          const SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                            'Silver',
+                            style: AppTextStyle.textCanvasText,
+                          ),
+                          const SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                            '30,000 PV',
+                            style: AppTextStyle.textCanvasText,
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
-              ),
-            ),
-            Positioned(
-              top: (104.4 - 20) / 2,
-              left: (371.4 * 0.9 / 5 * 3),
-              child: Container(
-                width: 20,
-                height: 20,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.red,
+                Positioned(
+                  top: (constraints.maxHeight - 20) / 2,
+                  left: ((constraints.maxWidth + 20) * 0.8 / 4 * 3),
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 20,
+                        height: 20,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: canvasDataModel.value >= CanvasDataModel.goldValue ? AppColors.orange : AppColors.lightOrange,
+                          border: Border.all(
+                            color: AppColors.orange,
+                          ),
+                        ),
+                        child: Icon(
+                          FontAwesomeIcons.medal,
+                          color: canvasDataModel.value >= CanvasDataModel.goldValue ? AppColors.white : AppColors.orange,
+                          size: 10,
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          const SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                            'Gold',
+                            style: AppTextStyle.textCanvasText,
+                          ),
+                          const SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                            '60,000 PV',
+                            style: AppTextStyle.textCanvasText,
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
-              ),
-            ),
-            Positioned(
-              top: (104.4 - 20) / 2,
-              left: (371.4 * 0.9 / 5 * 4),
-              child: Container(
-                width: 20,
-                height: 20,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.red,
+                Positioned(
+                  top: (constraints.maxHeight - 30) / 2,
+                  left: ((constraints.maxWidth) * 0.8),
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 30,
+                        height: 30,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: canvasDataModel.value == CanvasDataModel.maxValue ? AppColors.orange : AppColors.lightOrange,
+                          border: Border.all(
+                            color: AppColors.orange,
+                          ),
+                        ),
+                        child: Icon(
+                          FontAwesomeIcons.medal,
+                          color: canvasDataModel.value == CanvasDataModel.maxValue ? AppColors.white : AppColors.orange,
+                          size: 10,
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          const SizedBox(
+                            height: 8,
+                          ),
+                          Text(
+                            '100,000 PV',
+                            style: AppTextStyle.textCanvasText,
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
-              ),
-            ),
-            Positioned(
-              top: (104.4 - 30) / 2,
-              left: (371.4 * 0.9),
-              child: Container(
-                width: 30,
-                height: 30,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.red,
+                Positioned(
+                  top: (constraints.maxHeight - 50) / 2,
+                  left: ((constraints.maxWidth) * 0.81),
+                  child: Text(
+                    'Platinum',
+                    style: AppTextStyle.textCanvasText,
+                  ),
                 ),
-              ),
+                Positioned(
+                  top: (constraints.maxHeight + 50) / 2,
+                  left: ((constraints.maxWidth) * 0.05 - 10),
+                  child: Text(
+                    '0,00 PV',
+                    style: AppTextStyle.textCanvasText,
+                  ),
+                ),
+                Positioned(
+                  top: 0,
+                  left: ((constraints.maxWidth) * 0.05 - 10),
+                  child: Container(
+                    margin: const EdgeInsets.only(left: 10, top: 5),
+                    height: 20,
+                    child: Text(
+                      'PV Progress',
+                      style: AppTextStyle.label8,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 0,
+                  left: constraints.maxWidth * 0.45,
+                  child: Container(
+                    margin: const EdgeInsets.only(left: 10, top: 5),
+                    height: 20,
+                    child: RichText(
+                      text: TextSpan(
+                        style: AppTextStyle.label9,
+                        children: [
+                          const TextSpan(text: 'You need '),
+                          TextSpan(
+                            text: value < CanvasDataModel.bronzeValue
+                                ? '${(CanvasDataModel.bronzeValue - value)}'
+                                : value < CanvasDataModel.silverValue
+                                    ? '${(CanvasDataModel.silverValue - value)}'
+                                    : value < CanvasDataModel.goldValue
+                                        ? '${(CanvasDataModel.goldValue - value)}'
+                                        : '${(CanvasDataModel.maxValue - value)}',
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.orange,
+                              fontSize: 8,
+                            ),
+                          ),
+                          const TextSpan(text: ' more PV to reach the next level'),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
+          ),
+        );
+      },
     );
   }
 }
@@ -92,34 +257,43 @@ class MyPainter extends CustomPainter {
   Paint barPaintFull = Paint()..color = AppColors.orange;
   Paint barPaintEmpty = Paint()..color = AppColors.grey.shade300;
 
+  var canvasDataModel;
+
+  MyPainter({this.canvasDataModel});
+
   @override
   void paint(Canvas canvas, Size size) {
-    print(size);
-    final barHeight = 5.0;
-    final barWidth = size.width * 0.9;
-    final radiusCircle1 = 5.0;
-
+    final radiusCircle = 5.0;
+    final horizontalAxis = size.width * 0.05;
+    final verticalAxis = size.height / 2;
     canvas.drawRect(
-      Rect.fromLTWH(
-        size.width * 0.05,
-        (size.height - barHeight) / 2,
-        barWidth,
-        barHeight,
-      ),
+      canvasDataModel.drawEmptyRect(),
+      barPaintEmpty,
+    );
+    canvas.drawCircle(
+      Offset(horizontalAxis, verticalAxis),
+      radiusCircle,
       barPaintFull,
     );
     canvas.drawRect(
-        Rect.fromLTWH(
-          size.width * 0.05 + (size.width * 0.9 * progress),
-          (size.height - barHeight) / 2,
-          (barWidth * (1 - progress)),
-          barHeight,
-        ),
-        barPaintEmpty);
-    print(size.width * 0.05);
+      canvasDataModel.drawUnRankRect(),
+      barPaintFull,
+    );
+    canvas.drawRect(
+      canvasDataModel.drawBronzeRect(),
+      barPaintFull,
+    );
+    canvas.drawRect(
+      canvasDataModel.drawSilverRect(),
+      barPaintFull,
+    );
+    canvas.drawRect(
+      canvasDataModel.drawGoldRect(),
+      barPaintFull,
+    );
     canvas.drawCircle(
-      Offset(size.width * 0.05, size.height / 2),
-      radiusCircle1,
+      canvasDataModel.drawCheckPoint(),
+      radiusCircle,
       barPaintFull,
     );
   }

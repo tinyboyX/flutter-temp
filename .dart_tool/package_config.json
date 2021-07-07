@@ -356,6 +356,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "font_awesome_flutter",
+      "rootUri": "file:///home/phmmgiang/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-9.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "get_it",
       "rootUri": "file:///home/phmmgiang/.pub-cache/hosted/pub.dartlang.org/get_it-6.1.1",
       "packageUri": "lib/",
@@ -866,7 +872,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-07-06T03:39:09.627091Z",
+  "generated": "2021-07-07T06:43:08.648752Z",
   "generator": "pub",
   "generatorVersion": "2.13.3"
 }

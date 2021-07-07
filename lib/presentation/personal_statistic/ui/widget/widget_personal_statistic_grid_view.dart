@@ -31,7 +31,9 @@ class _WidgetPersonalStatisticGridViewState extends State<WidgetPersonalStatisti
         itemCount: listTempGridItem.length + 1,
         itemBuilder: (BuildContext context, int index) {
           if (index == 2) {
-            return const WidgetPersonalStatisticPVProgressBar();
+            return const WidgetPersonalStatisticPVProgressBar(
+              value: 39000,
+            );
           }
           if (index == listTempGridItem.length) {
             return WidgetSponsorItem(user: user);

@@ -64,6 +64,14 @@ class AppTextStyle {
     );
   }
 
+  static TextStyle get label9 {
+    return TextStyle(
+      fontSize: 8.sp,
+      fontWeight: FontWeight.bold,
+      color: AppColors.black,
+    );
+  }
+
   static TextStyle get text7 {
     return TextStyle(
       fontSize: 12.sp,
@@ -140,6 +148,7 @@ class AppTextStyle {
       color: AppColors.notActiveColor,
     );
   }
+
   static TextStyle get textPersonalStatisticButton {
     return TextStyle(
       fontSize: 14.sp,
@@ -148,4 +157,11 @@ class AppTextStyle {
     );
   }
 
+  static TextStyle get textCanvasText {
+    return TextStyle(
+      fontSize: 7.sp,
+      fontWeight: FontWeight.bold,
+      color: AppColors.blue,
+    );
+  }
 }
