@@ -71,7 +71,7 @@ class _AccountScreenState extends State<AccountScreen> {
 
   @override
   void initState() {
-    final _accountBloc = context.read<AccountBloc>();
+    // final _accountBloc = context.read<AccountBloc>();
     super.initState();
   }
 }
