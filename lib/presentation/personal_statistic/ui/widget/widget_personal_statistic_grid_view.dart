@@ -21,7 +21,7 @@ class _WidgetPersonalStatisticGridViewState extends State<WidgetPersonalStatisti
     final user = getTempUser();
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20),
-      height: 920,
+      height: 960,
       child: StaggeredGridView.countBuilder(
         padding: const EdgeInsets.only(top: 10),
         crossAxisCount: 4,
@@ -32,7 +32,7 @@ class _WidgetPersonalStatisticGridViewState extends State<WidgetPersonalStatisti
         itemBuilder: (BuildContext context, int index) {
           if (index == 2) {
             return const WidgetPersonalStatisticPVProgressBar(
-              value: 39000,
+              value: 77777,
             );
           }
           if (index == listTempGridItem.length) {
@@ -42,7 +42,7 @@ class _WidgetPersonalStatisticGridViewState extends State<WidgetPersonalStatisti
         },
         staggeredTileBuilder: (int index) {
           if (index == 2 || index == listTempGridItem.length) {
-            return const StaggeredTile.count(4, 1.2);
+            return const StaggeredTile.count(4, 1.5);
           }
           return const StaggeredTile.count(2, 1);
         },
