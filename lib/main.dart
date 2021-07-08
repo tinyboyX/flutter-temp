@@ -71,10 +71,10 @@ class _MyAppState extends State<MyApp> {
         navigatorObservers: <NavigatorObserver>[
           MyApp.observer,
         ],
-        navigatorKey: NavigationUtil.rootKey,
-        debugShowCheckedModeBanner: false,
         initialRoute: RouteDefine.MainScreen.name,
         onGenerateRoute: AppRouting.generateRoute,
+        navigatorKey: NavigationUtil.rootKey,
+        debugShowCheckedModeBanner: false,
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
         themeMode: appTheme.currentTheme,
