@@ -71,6 +71,13 @@ class AppTextStyle {
       color: AppColors.black,
     );
   }
+  static TextStyle get textCanvasContainValue {
+    return TextStyle(
+      fontSize: 8.sp,
+      fontWeight: FontWeight.bold,
+      color: AppColors.white,
+    );
+  }
 
   static TextStyle get text7 {
     return TextStyle(

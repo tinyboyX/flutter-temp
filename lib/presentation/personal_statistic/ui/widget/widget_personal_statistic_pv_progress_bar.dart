@@ -4,6 +4,7 @@ import 'package:clean_architechture/presentation/personal_statistic/model/canvas
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:intl/intl.dart';
 
 class WidgetPersonalStatisticPVProgressBar extends StatelessWidget {
   const WidgetPersonalStatisticPVProgressBar({Key? key, required this.value}) : super(key: key);
@@ -20,12 +21,12 @@ class WidgetPersonalStatisticPVProgressBar extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
           ),
           child: CustomPaint(
-            painter: MyPainter(canvasDataModel: canvasDataModel),
+            painter: PVProgressBar(canvasDataModel: canvasDataModel),
             child: Stack(
               children: [
                 Positioned(
-                  top: (constraints.maxHeight - 20) / 2,
-                  left: ((constraints.maxWidth + 20) * 0.8 / 4 * 1),
+                  top: (constraints.maxHeight - 20) / 2 + 20,
+                  left: ((constraints.maxWidth + 30) * 0.9 / 4 * 1),
                   child: Column(
                     children: [
                       Container(
@@ -66,8 +67,8 @@ class WidgetPersonalStatisticPVProgressBar extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  top: (constraints.maxHeight - 20) / 2,
-                  left: ((constraints.maxWidth + 20) * 0.8 / 4 * 2),
+                  top: (constraints.maxHeight - 20) / 2 + 20,
+                  left: ((constraints.maxWidth ) * 0.9 / 4 * 2),
                   child: Column(
                     children: [
                       Container(
@@ -108,8 +109,8 @@ class WidgetPersonalStatisticPVProgressBar extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  top: (constraints.maxHeight - 20) / 2,
-                  left: ((constraints.maxWidth + 20) * 0.8 / 4 * 3),
+                  top: (constraints.maxHeight - 20) / 2 + 20,
+                  left: ((constraints.maxWidth + 30) * 0.8 / 4 * 3),
                   child: Column(
                     children: [
                       Container(
@@ -150,8 +151,8 @@ class WidgetPersonalStatisticPVProgressBar extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  top: (constraints.maxHeight - 30) / 2,
-                  left: ((constraints.maxWidth) * 0.8),
+                  top: (constraints.maxHeight - 30) / 2 + 20,
+                  left: ((constraints.maxWidth) * 0.85),
                   child: Column(
                     children: [
                       Container(
@@ -185,16 +186,16 @@ class WidgetPersonalStatisticPVProgressBar extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  top: (constraints.maxHeight - 50) / 2,
-                  left: ((constraints.maxWidth) * 0.81),
+                  top: (constraints.maxHeight - 50) / 2 + 20,
+                  left: ((constraints.maxWidth) * 0.86),
                   child: Text(
                     'Platinum',
                     style: AppTextStyle.textCanvasText,
                   ),
                 ),
                 Positioned(
-                  top: (constraints.maxHeight + 50) / 2,
-                  left: ((constraints.maxWidth) * 0.05 - 10),
+                  top: (constraints.maxHeight + 50) / 2 + 20,
+                  left: ((constraints.maxWidth) * 0.1 - 10),
                   child: Text(
                     '0,00 PV',
                     style: AppTextStyle.textCanvasText,
@@ -225,22 +226,62 @@ class WidgetPersonalStatisticPVProgressBar extends StatelessWidget {
                           const TextSpan(text: 'You need '),
                           TextSpan(
                             text: value < CanvasDataModel.bronzeValue
-                                ? '${(CanvasDataModel.bronzeValue - value)}'
+                                ? '${NumberFormat.decimalPattern().format(CanvasDataModel.bronzeValue - value)}'
                                 : value < CanvasDataModel.silverValue
-                                    ? '${(CanvasDataModel.silverValue - value)}'
+                                    ? '${NumberFormat.decimalPattern().format(CanvasDataModel.silverValue - value)}'
                                     : value < CanvasDataModel.goldValue
-                                        ? '${(CanvasDataModel.goldValue - value)}'
-                                        : '${(CanvasDataModel.maxValue - value)}',
+                                        ? '${NumberFormat.decimalPattern().format(CanvasDataModel.goldValue - value)}'
+                                        : '${NumberFormat.decimalPattern().format(CanvasDataModel.maxValue - value)}',
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               color: AppColors.orange,
                               fontSize: 8,
                             ),
                           ),
-                          const TextSpan(text: ' more PV to reach the next level'),
+                          const TextSpan(text: ' more PV to reach the next level.'),
                         ],
                       ),
                     ),
+                  ),
+                ),
+                Positioned(
+                  top: (constraints.maxHeight - 65) / 2,
+                  left: value <= CanvasDataModel.bronzeValue
+                      ? ((constraints.maxWidth * 0.1 - 20) + (constraints.maxWidth * 0.2 * value / CanvasDataModel.bronzeValue))
+                      : value <= CanvasDataModel.silverValue
+                          ? ((constraints.maxWidth * 0.1 - 20) + (constraints.maxWidth * 0.2)) +
+                              (constraints.maxWidth * 0.2 * ((value - CanvasDataModel.bronzeValue) / (CanvasDataModel.silverValue - CanvasDataModel.bronzeValue)))
+                          : value <= CanvasDataModel.goldValue
+                              ? ((constraints.maxWidth * 0.1 - 20) + (constraints.maxWidth * 0.4)) +
+                                  (constraints.maxWidth * 0.2 * ((value - CanvasDataModel.silverValue) / (CanvasDataModel.goldValue - CanvasDataModel.silverValue)))
+                              : ((constraints.maxWidth * 0.1 - 18) + (constraints.maxWidth * 0.6)) +
+                                  (constraints.maxWidth * 0.2 * ((value - CanvasDataModel.goldValue) / (CanvasDataModel.maxValue - CanvasDataModel.goldValue))),
+                  child: Container(
+                    width: 40,
+                    height: 20,
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: AppColors.orange),
+                    child: Center(
+                      child: Text(
+                        NumberFormat.decimalPattern().format(value),
+                        style: AppTextStyle.textCanvasContainValue,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: (constraints.maxHeight-26) / 2,
+                  left: value <= CanvasDataModel.bronzeValue
+                      ? ((constraints.maxWidth * 0.1 -5) + (constraints.maxWidth * 0.2 * value / CanvasDataModel.bronzeValue))
+                      : value <= CanvasDataModel.silverValue
+                      ? ((constraints.maxWidth * 0.1 - 5) + (constraints.maxWidth * 0.2)) +
+                      (constraints.maxWidth * 0.2 * ((value - CanvasDataModel.bronzeValue) / (CanvasDataModel.silverValue - CanvasDataModel.bronzeValue)))
+                      : value <= CanvasDataModel.goldValue
+                      ? ((constraints.maxWidth * 0.1 - 5) + (constraints.maxWidth * 0.4)) +
+                      (constraints.maxWidth * 0.2 * ((value - CanvasDataModel.silverValue) / (CanvasDataModel.goldValue - CanvasDataModel.silverValue)))
+                      : ((constraints.maxWidth * 0.1 - 3) + (constraints.maxWidth * 0.6)) +
+                      (constraints.maxWidth * 0.2 * ((value - CanvasDataModel.goldValue) / (CanvasDataModel.maxValue - CanvasDataModel.goldValue))),
+                  child: CustomPaint(
+                    painter: DrawTriangleShape(),
                   ),
                 ),
               ],
@@ -252,20 +293,42 @@ class WidgetPersonalStatisticPVProgressBar extends StatelessWidget {
   }
 }
 
-class MyPainter extends CustomPainter {
+class DrawTriangleShape extends CustomPainter {
+  Paint painter = Paint()
+    ..color = AppColors.orange
+    ..style = PaintingStyle.fill;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    var path = Path();
+    path.moveTo(0, 0);
+    path.lineTo(5, 5);
+    path.lineTo(10, 0);
+    path.close();
+
+    canvas.drawPath(path, painter);
+  }
+
+  @override
+  bool shouldRepaint(CustomPainter oldDelegate) {
+    return false;
+  }
+}
+
+class PVProgressBar extends CustomPainter {
   final double progress = 0.7;
   Paint barPaintFull = Paint()..color = AppColors.orange;
   Paint barPaintEmpty = Paint()..color = AppColors.grey.shade300;
 
   var canvasDataModel;
 
-  MyPainter({this.canvasDataModel});
+  PVProgressBar({this.canvasDataModel});
 
   @override
   void paint(Canvas canvas, Size size) {
     final radiusCircle = 5.0;
-    final horizontalAxis = size.width * 0.05;
-    final verticalAxis = size.height / 2;
+    final horizontalAxis = size.width * 0.1;
+    final verticalAxis = size.height / 2 + 20;
     canvas.drawRect(
       canvasDataModel.drawEmptyRect(),
       barPaintEmpty,
