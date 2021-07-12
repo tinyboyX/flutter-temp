@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/phmmgiang/FlutterProject/flutter-temp/build/app/intermediates/incremental/mergeDevelopmentDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/phmmgiang/StudioProjects/flutter-temp/build/app/intermediates/incremental/mergeDevelopmentDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

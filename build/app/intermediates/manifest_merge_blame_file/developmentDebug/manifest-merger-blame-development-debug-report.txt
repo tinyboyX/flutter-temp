@@ -12,41 +12,41 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/debug/AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[:firebase_analytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
-15-->[:firebase_analytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+15-->[:firebase_analytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+15-->[:firebase_analytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
 16    <uses-permission android:name="android.permission.WAKE_LOCK" />
-16-->[:firebase_analytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
-16-->[:firebase_analytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-65
+16-->[:firebase_analytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
+16-->[:firebase_analytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-65
 17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 17-->[com.google.android.gms:play-services-measurement:19.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/a1e5fee5fd9de8f03dedd244d931e1bc/play-services-measurement-19.0.0/AndroidManifest.xml:26:5-110
 17-->[com.google.android.gms:play-services-measurement:19.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/a1e5fee5fd9de8f03dedd244d931e1bc/play-services-measurement-19.0.0/AndroidManifest.xml:26:22-107
 18
 19    <application
-19-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:3:4-40:19
+19-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:3:4-40:19
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 20-->[androidx.core:core:1.1.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/558fecc8c85f2efa3413d630c8086e87/core-1.1.0/AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:icon="@mipmap/ic_launcher"
-22-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:5:9-43
+22-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:5:9-43
 23        android:label="clean_architechture" >
-23-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:4:9-44
+23-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:4:9-44
 24        <activity
-24-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:6:9-34:20
+24-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:6:9-34:20
 25            android:name="com.hoangnh.clean_architechture.MainActivity"
-25-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:7:13-41
+25-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:7:13-41
 26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-26-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:10:13-163
+26-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:10:13-163
 27            android:hardwareAccelerated="true"
-27-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:11:13-47
+27-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:11:13-47
 28            android:launchMode="singleTop"
-28-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:8:13-43
+28-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:8:13-43
 29            android:theme="@style/LaunchTheme"
-29-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:9:13-47
+29-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:9:13-47
 30            android:windowSoftInputMode="adjustResize" >
-30-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:12:13-55
+30-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:12:13-55
 31
 32            <!--
 33                 Specifies an Android theme to apply to this Activity as soon as
@@ -55,11 +55,11 @@
 36                 to determine the Window background behind the Flutter UI.
 37            -->
 38            <meta-data
-38-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:17:13-20:17
+38-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:17:13-20:17
 39                android:name="io.flutter.embedding.android.NormalTheme"
-39-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:18:15-70
+39-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:18:15-70
 40                android:resource="@style/NormalTheme" />
-40-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:19:15-52
+40-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:19:15-52
 41            <!--
 42                 Displays an Android View that continues showing the launch screen
 43                 Drawable until Flutter paints its first frame, then this splash
@@ -68,21 +68,21 @@
 46                 Flutter's first frame.
 47            -->
 48            <meta-data
-48-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:26:13-29:17
+48-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:26:13-29:17
 49                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-49-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:27:15-79
+49-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:27:15-79
 50                android:resource="@drawable/launch_background" />
-50-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:28:15-61
+50-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:28:15-61
 51
 52            <intent-filter>
-52-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:30:13-33:29
+52-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:30:13-33:29
 53                <action android:name="android.intent.action.MAIN" />
-53-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:31:17-68
-53-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:31:25-66
+53-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:31:17-68
+53-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:31:25-66
 54
 55                <category android:name="android.intent.category.LAUNCHER" />
-55-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:32:17-76
-55-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:32:27-74
+55-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:32:17-76
+55-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:32:27-74
 56            </intent-filter>
 57        </activity>
 58        <!--
@@ -90,38 +90,38 @@
 60             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 61        -->
 62        <meta-data
-62-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:37:9-39:33
+62-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:37:9-39:33
 63            android:name="flutterEmbedding"
-63-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:38:13-44
+63-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:38:13-44
 64            android:value="2" />
-64-->/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/AndroidManifest.xml:39:13-30
+64-->/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/AndroidManifest.xml:39:13-30
 65
 66        <service
-66-->[:firebase_crashlytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_crashlytics/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+66-->[:firebase_crashlytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_crashlytics/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 67            android:name="com.google.firebase.components.ComponentDiscoveryService"
-67-->[:firebase_crashlytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_crashlytics/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+67-->[:firebase_crashlytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_crashlytics/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 68            android:directBootAware="true"
-68-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/c45bebadac6065e0642e18d35528e7fe/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+68-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/92c0fb982178f5d8a8c74ff3a45f0a8c/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
 69            android:exported="false" >
 69-->[com.google.firebase:firebase-crashlytics:18.0.1] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/d9794bc8389537a5feedb7e287e742f4/firebase-crashlytics-18.0.1/AndroidManifest.xml:17:13-37
 70            <meta-data
-70-->[:firebase_crashlytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_crashlytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+70-->[:firebase_crashlytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_crashlytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 71                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
-71-->[:firebase_crashlytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_crashlytics/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-130
+71-->[:firebase_crashlytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_crashlytics/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-130
 72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[:firebase_crashlytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_crashlytics/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+72-->[:firebase_crashlytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_crashlytics/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 73            <meta-data
-73-->[:firebase_analytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:85
+73-->[:firebase_analytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:85
 74                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
-74-->[:firebase_analytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-127
+74-->[:firebase_analytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-127
 75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[:firebase_analytics] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-82
+75-->[:firebase_analytics] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-82
 76            <meta-data
-76-->[:firebase_core] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+76-->[:firebase_core] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-77-->[:firebase_core] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+77-->[:firebase_core] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[:firebase_core] /home/phmmgiang/FlutterProject/flutter-temp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+78-->[:firebase_core] /home/phmmgiang/StudioProjects/flutter-temp/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 79            <meta-data
 79-->[com.google.firebase:firebase-crashlytics:18.0.1] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/d9794bc8389537a5feedb7e287e742f4/firebase-crashlytics-18.0.1/AndroidManifest.xml:18:13-20:85
 80                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
@@ -143,17 +143,17 @@
 88        </service>
 89
 90        <provider
-90-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/c45bebadac6065e0642e18d35528e7fe/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+90-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/92c0fb982178f5d8a8c74ff3a45f0a8c/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
 91            android:name="com.google.firebase.provider.FirebaseInitProvider"
-91-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/c45bebadac6065e0642e18d35528e7fe/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+91-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/92c0fb982178f5d8a8c74ff3a45f0a8c/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
 92            android:authorities="com.hoangnh.clean_architechture.dev.firebaseinitprovider"
-92-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/c45bebadac6065e0642e18d35528e7fe/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+92-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/92c0fb982178f5d8a8c74ff3a45f0a8c/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
 93            android:directBootAware="true"
-93-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/c45bebadac6065e0642e18d35528e7fe/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+93-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/92c0fb982178f5d8a8c74ff3a45f0a8c/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
 94            android:exported="false"
-94-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/c45bebadac6065e0642e18d35528e7fe/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+94-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/92c0fb982178f5d8a8c74ff3a45f0a8c/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
 95            android:initOrder="100" />
-95-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/c45bebadac6065e0642e18d35528e7fe/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+95-->[com.google.firebase:firebase-common:20.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/92c0fb982178f5d8a8c74ff3a45f0a8c/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
 96
 97        <receiver
 97-->[com.google.android.gms:play-services-measurement:19.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/a1e5fee5fd9de8f03dedd244d931e1bc/play-services-measurement-19.0.0/AndroidManifest.xml:29:9-33:20
@@ -185,41 +185,41 @@
 111-->[com.google.android.gms:play-services-measurement:19.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/a1e5fee5fd9de8f03dedd244d931e1bc/play-services-measurement-19.0.0/AndroidManifest.xml:43:13-69
 112
 113        <meta-data
-113-->[com.google.android.gms:play-services-basement:17.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ddc001f41729200b6943230fe3222a88/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+113-->[com.google.android.gms:play-services-basement:17.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/cfd6913f7cc9b8d9f78410fa9f51f9e8/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
 114            android:name="com.google.android.gms.version"
-114-->[com.google.android.gms:play-services-basement:17.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ddc001f41729200b6943230fe3222a88/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+114-->[com.google.android.gms:play-services-basement:17.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/cfd6913f7cc9b8d9f78410fa9f51f9e8/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 115            android:value="@integer/google_play_services_version" />
-115-->[com.google.android.gms:play-services-basement:17.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ddc001f41729200b6943230fe3222a88/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+115-->[com.google.android.gms:play-services-basement:17.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/cfd6913f7cc9b8d9f78410fa9f51f9e8/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 116
 117        <service
-117-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/f282eb11052550b0529b4caf27acab73/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+117-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ee5f10680745916623ea0e935557835f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
 118            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-118-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/f282eb11052550b0529b4caf27acab73/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+118-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ee5f10680745916623ea0e935557835f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
 119            android:exported="false" >
-119-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/f282eb11052550b0529b4caf27acab73/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+119-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ee5f10680745916623ea0e935557835f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
 120            <meta-data
-120-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/f282eb11052550b0529b4caf27acab73/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+120-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ee5f10680745916623ea0e935557835f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
 121                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-121-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/f282eb11052550b0529b4caf27acab73/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+121-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ee5f10680745916623ea0e935557835f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
 122                android:value="cct" />
-122-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/f282eb11052550b0529b4caf27acab73/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+122-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ee5f10680745916623ea0e935557835f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
 123        </service>
 124        <service
-124-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ab92af934f24893a7b48ca24f5deda8d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+124-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/3ad7c432e10412800ca9a7c8ce1fe9ba/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
 125            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-125-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ab92af934f24893a7b48ca24f5deda8d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+125-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/3ad7c432e10412800ca9a7c8ce1fe9ba/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
 126            android:exported="false"
-126-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ab92af934f24893a7b48ca24f5deda8d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+126-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/3ad7c432e10412800ca9a7c8ce1fe9ba/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
 127            android:permission="android.permission.BIND_JOB_SERVICE" >
-127-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ab92af934f24893a7b48ca24f5deda8d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+127-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/3ad7c432e10412800ca9a7c8ce1fe9ba/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
 128        </service>
 129
 130        <receiver
-130-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ab92af934f24893a7b48ca24f5deda8d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+130-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/3ad7c432e10412800ca9a7c8ce1fe9ba/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
 131            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-131-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ab92af934f24893a7b48ca24f5deda8d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+131-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/3ad7c432e10412800ca9a7c8ce1fe9ba/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
 132            android:exported="false" />
-132-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ab92af934f24893a7b48ca24f5deda8d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+132-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/phmmgiang/.gradle/caches/transforms-2/files-2.1/3ad7c432e10412800ca9a7c8ce1fe9ba/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
 133    </application>
 134
 135</manifest>

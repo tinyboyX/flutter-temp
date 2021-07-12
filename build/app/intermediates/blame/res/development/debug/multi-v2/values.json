@@ -1,27 +1,44 @@
 {
     "logs": [
         {
-            "outputFile": "/home/phmmgiang/FlutterProject/flutter-temp/build/app/intermediates/incremental/mergeDevelopmentDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/phmmgiang/StudioProjects/flutter-temp/build/app/intermediates/incremental/mergeDevelopmentDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ddc001f41729200b6943230fe3222a88/jetified-play-services-basement-17.0.0/res/values/values.xml",
+                    "source": "/home/phmmgiang/StudioProjects/flutter-temp/build/app/generated/res/google-services/development/debug/values/values.xml",
                     "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "238,401",
-                        "endColumns": "63,166",
-                        "endOffsets": "301,567"
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,716",
+                        "endColumns": "143,81,103,108,119,101,78",
+                        "endOffsets": "194,276,380,489,609,711,790"
                     },
                     "to": {
-                        "startLines": "76,80",
-                        "startColumns": "4,4",
-                        "startOffsets": "4633,5003",
-                        "endColumns": "67,166",
-                        "endOffsets": "4696,5165"
+                        "startLines": "81,82,83,84,85,86,87",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "5170,5314,5396,5500,5609,5729,5831",
+                        "endColumns": "143,81,103,108,119,101,78",
+                        "endOffsets": "5309,5391,5495,5604,5724,5826,5905"
                     }
                 },
                 {
-                    "source": "/home/phmmgiang/FlutterProject/flutter-temp/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/phmmgiang/StudioProjects/flutter-temp/build/app/generated/res/resValues/development/debug/values/gradleResValues.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "167",
+                        "endColumns": "70",
+                        "endOffsets": "233"
+                    },
+                    "to": {
+                        "startLines": "78",
+                        "startColumns": "4",
+                        "startOffsets": "4771",
+                        "endColumns": "70",
+                        "endOffsets": "4837"
+                    }
+                },
+                {
+                    "source": "/home/phmmgiang/StudioProjects/flutter-temp/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -40,24 +57,7 @@
                     }
                 },
                 {
-                    "source": "/home/phmmgiang/FlutterProject/flutter-temp/build/app/generated/res/google-services/development/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,716",
-                        "endColumns": "143,81,103,108,119,101,78",
-                        "endOffsets": "194,276,380,489,609,711,790"
-                    },
-                    "to": {
-                        "startLines": "81,82,83,84,85,86,87",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "5170,5314,5396,5500,5609,5729,5831",
-                        "endColumns": "143,81,103,108,119,101,78",
-                        "endOffsets": "5309,5391,5495,5604,5724,5826,5905"
-                    }
-                },
-                {
-                    "source": "/home/phmmgiang/FlutterProject/flutter-temp/build/app/generated/crashlytics/res/development/debug/values/com_crashlytics_build_id.xml",
+                    "source": "/home/phmmgiang/StudioProjects/flutter-temp/build/app/generated/crashlytics/res/development/debug/values/com_crashlytics_build_id.xml",
                     "from": {
                         "startLines": "8",
                         "startColumns": "0",
@@ -74,20 +74,20 @@
                     }
                 },
                 {
-                    "source": "/home/phmmgiang/FlutterProject/flutter-temp/build/app/generated/res/resValues/development/debug/values/gradleResValues.xml",
+                    "source": "/home/phmmgiang/.gradle/caches/transforms-2/files-2.1/cfd6913f7cc9b8d9f78410fa9f51f9e8/jetified-play-services-basement-17.0.0/res/values/values.xml",
                     "from": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "167",
-                        "endColumns": "70",
-                        "endOffsets": "233"
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "238,401",
+                        "endColumns": "63,166",
+                        "endOffsets": "301,567"
                     },
                     "to": {
-                        "startLines": "78",
-                        "startColumns": "4",
-                        "startOffsets": "4771",
-                        "endColumns": "70",
-                        "endOffsets": "4837"
+                        "startLines": "76,80",
+                        "startColumns": "4,4",
+                        "startOffsets": "4633,5003",
+                        "endColumns": "67,166",
+                        "endOffsets": "4696,5165"
                     }
                 },
                 {

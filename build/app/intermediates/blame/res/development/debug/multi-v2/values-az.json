@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/phmmgiang/FlutterProject/flutter-temp/build/app/intermediates/incremental/mergeDevelopmentDebugResources/merged.dir/values-az/values-az.xml",
+            "outputFile": "/home/phmmgiang/StudioProjects/flutter-temp/build/app/intermediates/incremental/mergeDevelopmentDebugResources/merged.dir/values-az/values-az.xml",
             "map": [
                 {
-                    "source": "/home/phmmgiang/.gradle/caches/transforms-2/files-2.1/ddc001f41729200b6943230fe3222a88/jetified-play-services-basement-17.0.0/res/values-az/values.xml",
+                    "source": "/home/phmmgiang/.gradle/caches/transforms-2/files-2.1/cfd6913f7cc9b8d9f78410fa9f51f9e8/jetified-play-services-basement-17.0.0/res/values-az/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
