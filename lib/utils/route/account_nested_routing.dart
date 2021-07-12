@@ -1,4 +1,4 @@
-import 'package:clean_architechture/presentation/account/account_route.dart';
+import 'package:clean_architechture/presentation/account/account_page_route.dart';
 import 'package:clean_architechture/presentation/account_information/account_information_route.dart';
 import 'package:clean_architechture/presentation/g1_analysis/g1_analysis_route.dart';
 import 'package:clean_architechture/presentation/organize_chart/organize_chart_route.dart';
@@ -20,14 +20,13 @@ enum AccountNestedRouteDefine {
 class AccountNestedAppRouting {
   static MaterialPageRoute generateRoute(RouteSettings settings) {
     final routes = <String, WidgetBuilder>{
-
       AccountNestedRouteDefine.ReportScreen.name: (_) => ReportRoute.route,
       AccountNestedRouteDefine.OrganizeChartScreen.name: (_) => OrganizeChartRoute.route,
       AccountNestedRouteDefine.AccountInformationScreen.name: (_) => AccountInformationRoute.route,
       AccountNestedRouteDefine.SponsorChartScreen.name: (_) => SponsorChartRoute.route,
       AccountNestedRouteDefine.PersonalStatisticScreen.name: (_) => PersonalStatisticRoute.route,
       AccountNestedRouteDefine.G1AnalysisScreen.name: (_) => G1AnalysisRoute.route,
-      AccountNestedRouteDefine.AccountScreen.name: (_) => AccountRoute.route,
+      AccountNestedRouteDefine.AccountScreen.name: (_) => AccountPageRoute.route,
     };
 
     final routeBuilder = routes[settings.name];
