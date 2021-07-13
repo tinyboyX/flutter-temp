@@ -31,7 +31,7 @@ class WidgetAppbarInfoItem extends StatelessWidget {
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.3),
                   spreadRadius: 2.5,
-                  blurRadius: 5, // changes position of shadow
+                  blurRadius: 5,
                 ),
               ],
             ),

@@ -22,51 +22,67 @@ class SponsorChartScreen extends StatelessWidget {
               children: [
                 const CommonChartAppBarWidget(),
                 Container(
-                  margin: const EdgeInsets.all(10),
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        'Your Organization Tree',
-                        style: AppTextStyle.label6,
-                      ),
-                      Container(
-                        padding: const EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey.shade300),
+                      Expanded(
+                        flex: 3,
+                        child: Text(
+                          'Your Organization Tree',
+                          style: AppTextStyle.label6,
                         ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'Left (${listSponsorChart.length})',
-                              style: AppTextStyle.label6,
-                            ),
-                            const Icon(Icons.keyboard_arrow_down_rounded)
-                          ],
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: WidgetNotificationIcon(
+                          onTap: () {},
+                          iconData: Icons.favorite,
+                          color: Colors.black,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          padding: const EdgeInsets.all(5),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey.shade300),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                'Left (${listSponsorChart.length})',
+                                style: AppTextStyle.label6,
+                              ),
+                              const Icon(Icons.keyboard_arrow_down_rounded)
+                            ],
+                          ),
                         ),
                       )
                     ],
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(10),
-                  margin: const EdgeInsets.all(10),
+                  height: 32,
+                  margin: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   color: Colors.grey.shade300,
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      SizedBox(
-                        width: 150,
+                      Expanded(
+                        flex: 3,
                         child: Text(
                           'User',
                           style: AppTextStyle.label6,
                         ),
                       ),
-                      SizedBox(
-                        width: 50,
+                      Expanded(
+                        flex: 1,
                         child: Center(
                           child: Text(
                             'Team',
@@ -74,8 +90,8 @@ class SponsorChartScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
-                        width: 50,
+                      Expanded(
+                        flex: 1,
                         child: Center(
                           child: Text(
                             'ID',
@@ -83,12 +99,15 @@ class SponsorChartScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      WidgetNotificationIcon(
-                        onTap: () {},
-                        iconData: Icons.keyboard_arrow_down_rounded,
-                        color: Colors.transparent,
-                        backgroundColor: Colors.transparent,
-                        size: 25,
+                      Expanded(
+                        flex: 1,
+                        child: WidgetNotificationIcon(
+                          onTap: () {},
+                          iconData: Icons.keyboard_arrow_down_rounded,
+                          color: Colors.transparent,
+                          backgroundColor: Colors.transparent,
+                          size: 25,
+                        ),
                       )
                     ],
                   ),
@@ -99,7 +118,9 @@ class SponsorChartScreen extends StatelessWidget {
                     (index) {
                       return WidgetChartItem(
                         memberModel: listOrganizeChart[index],
-                        color: !(index % 2 == 0) ? Colors.grey.shade300 : Colors.white,
+                        color: !(index % 2 == 0)
+                            ? Colors.grey.shade300
+                            : Colors.white,
                       );
                     },
                   ),

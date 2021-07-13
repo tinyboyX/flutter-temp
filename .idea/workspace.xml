@@ -13,12 +13,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11f66012-00dd-4ecb-a560-da1e2534a4f7" name="Default Changelist" comment="Update responsive for account_pages.dart , account_information_screen.dart , personal_statistic_screen.dart">
+    <list default="true" id="11f66012-00dd-4ecb-a560-da1e2534a4f7" name="Default Changelist" comment="Update responsive for organize_chart_screen.dart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/presentation/account/ui/widget/widget_appbar_info_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/account/ui/widget/widget_appbar_info_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_appbar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_appbar_action.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_appbar_action.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/account_information/ui/account_information_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/account_information/ui/account_information_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/account_information/ui/widget/widget_info_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/account_information/ui/widget/widget_info_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/common/widget/chart/widget/widget_chart_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/g1_analysis_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/g1_analysis_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_grid_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/g1_analysis/ui/widget/widget_g1_analysis_grid_item.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/presentation/organize_chart/ui/organize_chart_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/organize_chart/ui/organize_chart_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/sponsor_chart/ui/sponsor_chart_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/sponsor_chart/ui/sponsor_chart_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626168359949</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update responsive for organize_chart_screen.dart">
+      <created>1626170172626</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1626170172626</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,7 +308,8 @@
     <MESSAGE value="finish personal statistic page" />
     <MESSAGE value="modify personal statistic page change PVProgressBar" />
     <MESSAGE value="Update responsive for account_pages.dart , account_information_screen.dart , personal_statistic_screen.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update responsive for account_pages.dart , account_information_screen.dart , personal_statistic_screen.dart" />
+    <MESSAGE value="Update responsive for organize_chart_screen.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update responsive for organize_chart_screen.dart" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="418" width="538" height="209" key="#Dart" timestamp="1624586801185">
@@ -370,18 +382,19 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="313" y="265" width="824" height="515" key="IDE.errors.dialog/0.27.1920.985@0.27.1920.985" timestamp="1625130604096" />
-    <state x="353" y="106" width="914" height="707" key="SettingsEditor" timestamp="1626169696383">
+    <state x="353" y="106" width="914" height="707" key="SettingsEditor" timestamp="1626171628596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="353" y="106" width="914" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1626169696383" />
+    <state x="353" y="106" width="914" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1626171628596" />
     <state x="441" y="154" width="1037" height="737" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1624948160744" />
     <state width="584" height="447" key="SwitcherDM" timestamp="1625712323668">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="584" height="447" key="SwitcherDM/0.27.1920.1053@0.27.1920.1053" timestamp="1625712323668" />
-    <state x="555" y="266" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1625717932423">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="444" y="187" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1626170175665">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="444" y="187" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1626170175665" />
     <state x="555" y="266" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1625717932423" />
     <state x="555" y="251" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1625201135551" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1626156591845">

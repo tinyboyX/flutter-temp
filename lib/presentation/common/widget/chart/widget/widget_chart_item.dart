@@ -21,11 +21,12 @@ class _WidgetChartItemState extends State<WidgetChartItem> {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(
-        horizontal: 10,
+        horizontal: 16,
       ),
       decoration: BoxDecoration(
         color: widget.color,
-        border: Border.all(width: 2, color: selected ? Colors.orange : Colors.transparent),
+        border: Border.all(
+            width: 1, color: selected ? Colors.orange : Colors.transparent),
       ),
       child: Column(
         children: [
@@ -38,15 +39,15 @@ class _WidgetChartItemState extends State<WidgetChartItem> {
             child: Container(
               color: Colors.transparent,
               height: 70,
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    child: SizedBox(
-                      width: 150,
+                    child: Expanded(
+                      flex: 3,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,8 +64,8 @@ class _WidgetChartItemState extends State<WidgetChartItem> {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: 50,
+                  Expanded(
+                    flex: 1,
                     child: Center(
                       child: Text(
                         widget.memberModel.memberTeam,
@@ -72,8 +73,8 @@ class _WidgetChartItemState extends State<WidgetChartItem> {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: 50,
+                  Expanded(
+                    flex: 1,
                     child: Center(
                       child: Text(
                         widget.memberModel.memberLevel.toString(),
@@ -81,16 +82,21 @@ class _WidgetChartItemState extends State<WidgetChartItem> {
                       ),
                     ),
                   ),
-                  WidgetNotificationIcon(
-                    iconData: !selected ? Icons.keyboard_arrow_down_rounded : Icons.keyboard_arrow_up_rounded,
-                    onTap: () {
-                      setState(() {
-                        selected = !selected;
-                      });
-                    },
-                    color: !selected ? Colors.black : Colors.orange,
-                    backgroundColor: Colors.grey.shade100,
-                    size: 25,
+                  Expanded(
+                    flex: 1,
+                    child: WidgetNotificationIcon(
+                      iconData: !selected
+                          ? Icons.keyboard_arrow_down_rounded
+                          : Icons.keyboard_arrow_up_rounded,
+                      onTap: () {
+                        setState(() {
+                          selected = !selected;
+                        });
+                      },
+                      color: !selected ? Colors.black : Colors.orange,
+                      backgroundColor: Colors.grey.shade100,
+                      size: 25,
+                    ),
                   )
                 ],
               ),

@@ -33,13 +33,15 @@ class _OrganizeChartScreenState extends State<OrganizeChartScreen> {
               children: [
                 const CommonChartAppBarWidget(),
                 Container(
-                  margin: const EdgeInsets.all(10),
+                  margin: const EdgeInsets.symmetric(horizontal: 16,vertical: 15),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        'Your Organization Tree',
-                        style: AppTextStyle.label6,
+                      Expanded(
+                        child: Text(
+                          'Your Organization Tree',
+                          style: AppTextStyle.label6,
+                        ),
                       ),
                       Container(
                         padding: const EdgeInsets.all(5),
@@ -61,42 +63,59 @@ class _OrganizeChartScreenState extends State<OrganizeChartScreen> {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(10),
-                  margin: const EdgeInsets.all(10),
+                  height: 32,
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  margin: const EdgeInsets.symmetric(horizontal: 16),
                   color: Colors.grey.shade300,
                   child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text(
-                        'User',
-                        style: AppTextStyle.label6,
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                          child: Text(
+                            'User',
+                            style: AppTextStyle.label6,
+                          ),
+                        ),
                       ),
-                      const SizedBox(
-                        width: 90,
+                      Expanded(
+                        flex: 1,
+                        child: Center(
+                          child: Text(
+                            'Team',
+                            style: AppTextStyle.label6,
+                          ),
+                        ),
                       ),
-                      Text(
-                        'Team',
-                        style: AppTextStyle.label6,
+                      Expanded(
+                        flex: 1,
+                        child: Center(
+                          child: Text(
+                            'Level',
+                            style: AppTextStyle.label6,
+                          ),
+                        ),
                       ),
-                      Text(
-                        'Level',
-                        style: AppTextStyle.label6,
+                      const Expanded(
+                        flex: 1,
+                        child: SizedBox(
+                          height: 24,
+                          width: 24,
+                        ),
                       ),
-                      const SizedBox(
-                        width: 40,
-                      )
                     ],
                   ),
                 ),
                 Column(
                   children: List<Widget>.generate(
                     listOrganizeChart.length,
-                    (index) {
+                        (index) {
                       return WidgetChartItem(
                         memberModel: listOrganizeChart[index],
-                        color: !(index % 2 == 0) ? Colors.grey.shade300 : Colors.white,
+                        color: !(index % 2 == 0)
+                            ? Colors.grey.shade300
+                            : Colors.white,
                       );
                     },
                   ),
