@@ -9,8 +9,8 @@ class CommonChartAppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 220,
-      width: double.infinity,
+      height: 171,
+      width: MediaQuery.of(context).size.width,
       child: Stack(
         children: [
           const OrganizeWidgetAppBarAction(),

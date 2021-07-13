@@ -1,8 +1,8 @@
 import 'package:clean_architechture/config/styles.dart';
+import 'package:clean_architechture/data/main/model/chart_item_member_model.dart';
 import 'package:clean_architechture/presentation/common/widget/chart/widget/widget_chart_appbar.dart';
 import 'package:clean_architechture/presentation/common/widget/chart/widget/widget_chart_item.dart';
 import 'package:clean_architechture/presentation/organize_chart/bloc/organization_chart_bloc.dart';
-import 'package:clean_architechture/data/main/model/chart_item_member_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

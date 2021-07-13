@@ -10,7 +10,8 @@ class OrganizeWidgetAppBarAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 160,
+      width: MediaQuery.of(context).size.width,
+      height: 147,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           begin: Alignment.topCenter,
@@ -31,64 +32,73 @@ class OrganizeWidgetAppBarAction extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          WidgetNotificationIcon(
-            iconData: Icons.arrow_back,
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          Container(
-            height: 40,
-            width: 300,
-            decoration: BoxDecoration(
-              color: AppColors.white,
-              border: Border.all(
-                color: Colors.transparent,
-                width: 1.0,
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: Container(
+          width: 338.w,
+          padding: const EdgeInsets.only(top: 46),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              WidgetNotificationIcon(
+                iconData: Icons.arrow_back,
+                onTap: () {
+                  Navigator.pop(context);
+                },
               ),
-              borderRadius: BorderRadius.circular(10.0),
-            ),
-            margin: const EdgeInsets.all(10),
-            child: Row(
-              children: <Widget>[
-                const Expanded(
-                  child: TextField(
-                    keyboardType: TextInputType.text,
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Search member ID",
-                      hintStyle: TextStyle(color: Colors.grey),
-                      contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-                      isDense: true,
-                    ),
-                    style: TextStyle(
-                      fontSize: 14.0,
-                      color: Colors.black,
-                    ),
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 10),
+                  height: 40,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(7),
+                    color: AppColors.white,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Expanded(
+                        child: TextField(
+                          style: TextStyle(
+                            fontWeight: FontWeight.normal,
+                            fontSize: 16,
+                          ),
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: 'Search member ID',
+                            hintStyle: TextStyle(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 18,
+                            ),
+                            alignLabelWithHint: true,
+                          ),
+                        ),
+                      ),
+                      WidgetNotificationIcon(
+                        notificationCount: null,
+                        size: 24,
+                        iconData: Icons.search,
+                        color: AppColors.grey,
+                        onTap: () {},
+                      ),
+                    ],
                   ),
                 ),
-                const SizedBox(
-                  width: 10,
-                ),
-                WidgetNotificationIcon(
-                  notificationCount: null,
-                  iconData: Icons.search,
+              ),
+              Container(
+                child: WidgetNotificationIcon(
+                  notificationCount: 19,
+                  iconData: Icons.shopping_cart,
                   onTap: () {},
-                  color: AppColors.grey,
                 ),
-              ],
-            ),
+              )
+            ],
           ),
-          WidgetNotificationIcon(
-            notificationCount: 19,
-            iconData: Icons.shopping_cart,
-            onTap: () {},
-          )
-        ],
+        ),
       ),
     );
   }
