@@ -71,6 +71,13 @@ class AppTextStyle {
       color: AppColors.black,
     );
   }
+
+  static TextStyle get text9 {
+    return TextStyle(
+      fontSize: 8.sp,
+    );
+  }
+
   static TextStyle get textCanvasContainValue {
     return TextStyle(
       fontSize: 8.sp,
@@ -121,6 +128,13 @@ class AppTextStyle {
       fontWeight: FontWeight.w700,
     );
   }
+
+  static TextStyle get scmID {
+    return TextStyle(
+      fontSize: 14.sp,
+    );
+  }
+
   static TextStyle get memberID {
     return TextStyle(
       fontSize: 15.sp,

@@ -12,7 +12,7 @@ class AppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 220,
+      height: 276,
       width: double.infinity,
       child: Stack(
         children: [

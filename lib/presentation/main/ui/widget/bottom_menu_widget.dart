@@ -48,14 +48,16 @@ class _BottomMenuWidgetState extends State<BottomMenuWidget> {
                 blurRadius: 5,
               ),
             ],
-            color: AppTheme().isLightMode(context) ? AppColors.black : AppColors.white,
+            color: AppTheme().isLightMode(context) ? AppColors.black : AppColors
+                .white,
           ),
           height: 70,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: bloc.menuItems
                 .map(
-                  (bottomMenuItem) => MenuItem(
+                  (bottomMenuItem) =>
+                  MenuItem(
                     icon: bottomMenuItem.icon,
                     title: bottomMenuItem.title,
                     isSelected: bloc.selectedItem == bottomMenuItem,
@@ -65,7 +67,7 @@ class _BottomMenuWidgetState extends State<BottomMenuWidget> {
                       );
                     },
                   ),
-                )
+            )
                 .toList(),
           ),
         );

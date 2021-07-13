@@ -11,7 +11,8 @@ class PersonalStatisticScreen extends StatefulWidget {
   const PersonalStatisticScreen({Key? key}) : super(key: key);
 
   @override
-  _PersonalStatisticScreenState createState() => _PersonalStatisticScreenState();
+  _PersonalStatisticScreenState createState() =>
+      _PersonalStatisticScreenState();
 }
 
 class _PersonalStatisticScreenState extends State<PersonalStatisticScreen> {
@@ -20,7 +21,6 @@ class _PersonalStatisticScreenState extends State<PersonalStatisticScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          color: AppColors.grey.shade200,
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -28,28 +28,30 @@ class _PersonalStatisticScreenState extends State<PersonalStatisticScreen> {
             children: [
               const WidgetPersonalStatisticAppBar(),
               const WidgetPersonalStatisticGridView(),
-              CustomButton(
-                paddingTop: 10,
-                paddingLeft: 15,
-                paddingRight: 15,
-                paddingBot: 10,
-                onPressed: () {},
-                bgColor: AppColors.orange,
-                appTextStyle: AppTextStyle.textPersonalStatisticButton,
-                text: 'View My Organization Tree',
+              const SizedBox(
+                height: 15,
               ),
-              CustomButton(
-                paddingTop: 10,
-                paddingLeft: 15,
-                paddingRight: 15,
-                paddingBot: 10,
-                onPressed: () {},
-                bgColor: AppColors.orange,
-                appTextStyle: AppTextStyle.textPersonalStatisticButton,
-                text: 'View Full Report and Analysis',
+              Center(
+                child: CustomButton(
+                  onPressed: () {},
+                  bgColor: AppColors.orange,
+                  appTextStyle: AppTextStyle.textPersonalStatisticButton,
+                  text: 'View My Organization Tree',
+                ),
               ),
               const SizedBox(
-                height: 10,
+                height: 15,
+              ),
+              Center(
+                child: CustomButton(
+                  onPressed: () {},
+                  bgColor: AppColors.orange,
+                  appTextStyle: AppTextStyle.textPersonalStatisticButton,
+                  text: 'View Full Report and Analysis',
+                ),
+              ),
+              const SizedBox(
+                height: 200,
               )
             ],
           ),

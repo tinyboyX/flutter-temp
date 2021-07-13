@@ -1,3 +1,4 @@
+import 'package:clean_architechture/config/colors.dart';
 import 'package:clean_architechture/presentation/account/ui/widget/widget_appbar.dart';
 import 'package:clean_architechture/presentation/account_information/model/account_information_item_model.dart';
 import 'package:flutter/cupertino.dart';
@@ -16,6 +17,7 @@ class _AccountInformationScreenState extends State<AccountInformationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.grey.shade100,
       body: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.max,

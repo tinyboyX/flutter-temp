@@ -20,7 +20,6 @@ class _WidgetInfoItemState extends State<WidgetInfoItem> {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 10),
       padding: const EdgeInsets.symmetric(horizontal: 10),
-      color: AppColors.white,
       height: 60,
       child: (widget.accountInformationItemModel.isConnectFacebook != null)
           ? Row(

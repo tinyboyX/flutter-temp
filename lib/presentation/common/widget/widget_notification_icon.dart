@@ -57,7 +57,8 @@ class WidgetNotificationIcon extends StatelessWidget {
               child: Container(
                 height: 15,
                 width: 15,
-                decoration: const BoxDecoration(shape: BoxShape.circle, color: Colors.red),
+                decoration: const BoxDecoration(
+                    shape: BoxShape.circle, color: Colors.red),
                 child: Center(
                     child: Text(
                   '$notificationCount',

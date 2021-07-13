@@ -12,7 +12,8 @@ class WidgetAppBarReportAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 160,
+      width: MediaQuery.of(context).size.width,
+      height: 147,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           begin: Alignment.topCenter,
@@ -28,63 +29,65 @@ class WidgetAppBarReportAction extends StatelessWidget {
         ),
         boxShadow: [
           BoxShadow(
-            color: AppColors.orangeAccent.withOpacity(0.5),
-            spreadRadius: 10,
+            color: Colors.grey.withOpacity(0.3),
+            spreadRadius: 5,
+            blurRadius: 10,
+            offset: Offset(0, 3), // changes position of shadow
           ),
         ],
       ),
-      child: Row(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          WidgetNotificationIcon(
-            iconData: Icons.arrow_back,
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          WidgetNotificationIcon(
-            notificationCount: 12,
-            iconData: Icons.notifications,
-            onTap: () {},
-          ),
-          const SizedBox(
-            width: 20,
-          ),
-          Container(
-            child: Text(
-              "SCM Connect",
-              style: AppTextStyle.label5,
-            ),
-          ),
-          const SizedBox(
-            width: 20,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: Container(
+          width: 338.w,
+          padding: const EdgeInsets.only(top: 46),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              WidgetNotificationIcon(
-                notificationCount: null,
-                iconData: Icons.search,
-                onTap: () {},
+              Row(
+                children: [
+                  WidgetNotificationIcon(
+                    iconData: Icons.arrow_back,
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  WidgetNotificationIcon(
+                    iconData: Icons.notifications,
+                    notificationCount: 9,
+                    onTap: () {},
+                  ),
+                ],
               ),
-              const SizedBox(
-                width: 10,
+              Container(
+                child: Text(
+                  "SCM Connect",
+                  style: AppTextStyle.label5,
+                ),
               ),
-              WidgetNotificationIcon(
-                iconData: Icons.favorite_border,
-                onTap: () {},
-              ),  const SizedBox(
-                width: 10,
-              ),
-              WidgetNotificationIcon(
-                notificationCount: 19,
-                iconData: Icons.shopping_cart,
-                onTap: () {},
-              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  WidgetNotificationIcon(
+                    notificationCount: null,
+                    iconData: Icons.search,
+                    onTap: () {},
+                  ),
+                  WidgetNotificationIcon(
+                    iconData: Icons.favorite_border,
+                    onTap: () {},
+                  ),
+                  WidgetNotificationIcon(
+                    notificationCount: 19,
+                    iconData: Icons.shopping_cart,
+                    onTap: () {},
+                  ),
+                ],
+              )
             ],
-          )
-        ],
+          ),
+        ),
       ),
     );
   }

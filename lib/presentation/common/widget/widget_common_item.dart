@@ -3,6 +3,7 @@ import 'package:clean_architechture/data/main/model/item_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ItemCommon extends StatelessWidget {
   const ItemCommon({Key? key, required this.itemModel}) : super(key: key);
@@ -12,9 +13,9 @@ class ItemCommon extends StatelessWidget {
   Widget build(BuildContext context) {
     if (itemModel.isDivide == true) {
       return Padding(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(16),
         child: Divider(
-          color: Colors.grey.shade200,
+          color: Colors.grey.shade400,
           thickness: 2,
         ),
       );
@@ -24,9 +25,8 @@ class ItemCommon extends StatelessWidget {
         itemModel.onTap!();
       },
       child: Container(
-        padding: const EdgeInsets.all(15),
-        color: Colors.white10,
-        height: 60,
+        margin: const EdgeInsets.only(left: 16, right: 16, bottom: 25),
+        height: 24,
         child: Row(
           children: [
             Icon(
@@ -42,9 +42,9 @@ class ItemCommon extends StatelessWidget {
                 style: AppTextStyle.label6,
               ),
             ),
-            const Icon(
+            Icon(
               Icons.arrow_forward_ios,
-              size: 20,
+              size: 12.h,
             ),
           ],
         ),

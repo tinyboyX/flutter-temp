@@ -12,7 +12,8 @@ class WidgetAppBarAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 160,
+      width: MediaQuery.of(context).size.width,
+      height: 147,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           begin: Alignment.topCenter,
@@ -33,47 +34,47 @@ class WidgetAppBarAction extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          WidgetNotificationIcon(
-            iconData: Icons.arrow_back,
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          const SizedBox(
-            width: 20,
-          ),
-          Container(
-            child: Text(
-              "SCM Connect",
-              style: AppTextStyle.label5,
-            ),
-          ),
-          const SizedBox(
-            width: 20,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: Container(
+          width: 338.w,
+          padding: const EdgeInsets.only(top: 46),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               WidgetNotificationIcon(
-                notificationCount: null,
-                iconData: Icons.search,
-                onTap: () {},
+                iconData: Icons.arrow_back,
+                onTap: () {
+                  Navigator.pop(context);
+                },
               ),
-              const SizedBox(
-                width: 10,
+              Container(
+                child: Text(
+                  "SCM Connect",
+                  style: AppTextStyle.label5,
+                ),
               ),
-              WidgetNotificationIcon(
-                notificationCount: 19,
-                iconData: Icons.shopping_cart,
-                onTap: () {},
-              ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    WidgetNotificationIcon(
+                      notificationCount: null,
+                      iconData: Icons.search,
+                      onTap: () {},
+                    ),
+                    WidgetNotificationIcon(
+                      notificationCount: 19,
+                      iconData: Icons.shopping_cart,
+                      onTap: () {},
+                    ),
+                  ],
+                ),
+              )
             ],
-          )
-        ],
+          ),
+        ),
       ),
     );
   }

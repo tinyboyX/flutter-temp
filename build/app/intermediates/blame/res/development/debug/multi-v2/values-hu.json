@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/phmmgiang/StudioProjects/flutter-temp/build/app/intermediates/incremental/mergeDevelopmentDebugResources/merged.dir/values-hu/values-hu.xml",
+            "outputFile": "D:\\Studio Projects\\flutter-temp\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values-hu\\values-hu.xml",
             "map": [
                 {
-                    "source": "/home/phmmgiang/.gradle/caches/transforms-2/files-2.1/cfd6913f7cc9b8d9f78410fa9f51f9e8/jetified-play-services-basement-17.0.0/res/values-hu/values.xml",
+                    "source": "C:\\Users\\Giang\\.gradle\\caches\\transforms-2\\files-2.1\\eefec2fa400d2e06a2ca4cf5e95d6df8\\jetified-play-services-basement-17.0.0\\res\\values-hu\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/phmmgiang/.gradle/caches/transforms-2/files-2.1/558fecc8c85f2efa3413d630c8086e87/core-1.1.0/res/values-hu/values-hu.xml",
+                    "source": "C:\\Users\\Giang\\.gradle\\caches\\transforms-2\\files-2.1\\558fecc8c85f2efa3413d630c8086e87\\core-1.1.0\\res\\values-hu\\values-hu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
